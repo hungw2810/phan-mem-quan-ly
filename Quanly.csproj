@@ -58,6 +58,24 @@
     <Compile Include="Báo cáo\Tienthue.Designer.cs">
       <DependentUpon>Tienthue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dữ liệu\Phần cứng\Banphim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Phần cứng\Banphim.Designer.cs">
+      <DependentUpon>Banphim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dữ liệu\Phần cứng\Chuot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Phần cứng\Chuot.Designer.cs">
+      <DependentUpon>Chuot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dữ liệu\Phần cứng\Tainghe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Phần cứng\Tainghe.Designer.cs">
+      <DependentUpon>Tainghe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Functions.cs" />
     <Compile Include="Danh mục\Thuemay.cs">
       <SubType>Form</SubType>
