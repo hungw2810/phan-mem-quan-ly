@@ -32,7 +32,7 @@ namespace Quanly.Dữ_liệu
             Functions.FillCombo("SELECT id_ram,TenRam FROM Ram", cboMaram, "id_ram", "TenRam");
             cboMaram.SelectedIndex = -1;
             Functions.FillCombo("SELECT id_man,TenMan FROM ManHinh", cboMamanhinh, "id_man", "TenMan");
-            cboMamanhinh.SelectedIndex = -1;
+           cboMamanhinh.SelectedIndex = -1;
             Functions.FillCombo("SELECT id_chuot,TenChuat FROM Chuot", cboMachuot, "id_chuot", "TenChuat");
             cboMachuot.SelectedIndex = -1;
             Functions.FillCombo("SELECT id_banphim,TenBanPhim FROM BanPhim", cboMabanphim, "id_banphim", "TenBanPhim");
