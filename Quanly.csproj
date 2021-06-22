@@ -76,7 +76,6 @@
     <Compile Include="Dữ liệu\Phần cứng\Tainghe.Designer.cs">
       <DependentUpon>Tainghe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Functions.cs" />
     <Compile Include="Danh mục\Thuemay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +136,7 @@
     <Compile Include="Dữ liệu\Phần cứng\Ram.Designer.cs">
       <DependentUpon>Ram.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
