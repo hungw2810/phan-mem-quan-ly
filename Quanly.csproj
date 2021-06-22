@@ -175,8 +175,8 @@
     <Compile Include="Tìm kiếm\Nhanvien.Designer.cs">
       <DependentUpon>Nhanvien.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Dữ liệu\Bảo trì\Giaiphap.resx">
-      <DependentUpon>Giaiphap.cs</DependentUpon>
+    <EmbeddedResource Include="Danh mục\Thuemay.resx">
+      <DependentUpon>Thuemay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dữ liệu\Maytinh.resx">
       <DependentUpon>Maytinh.cs</DependentUpon>
