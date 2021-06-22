@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Quanly.Danh_mục.Thông_tin
+namespace Quanly.Dữ_liệu.Bảo_trì
 {
-    public partial class Baotrics : Form
+    public partial class Nhabaotri : Form
     {
-        public Baotrics()
+        public Nhabaotri()
         {
             InitializeComponent();
         }

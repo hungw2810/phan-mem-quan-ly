@@ -1,7 +1,7 @@
 ﻿
-namespace Quanly.Danh_mục.Thông_tin
+namespace Quanly.Dữ_liệu
 {
-    partial class Baotrics
+    partial class Room
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace Quanly.Danh_mục.Thông_tin
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Baotrics";
+            this.Text = "Room";
         }
 
         #endregion

@@ -1,7 +1,7 @@
 ﻿
 namespace Quanly.Dữ_liệu.Bảo_trì
 {
-    partial class Nhabaotrics
+    partial class Nhabaotri
     {
         /// <summary>
         /// Required designer variable.
