@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Báo cáo\Baotri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Báo cáo\Baotri.Designer.cs">
+      <DependentUpon>Baotri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Báo cáo\Tienthue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Báo cáo\Tienthue.Designer.cs">
+      <DependentUpon>Tienthue.cs</DependentUpon>
+    </Compile>
     <Compile Include="Danh mục\Thuemay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +76,24 @@
     <Compile Include="Danh mục\Thông tin\Phong.Designer.cs">
       <DependentUpon>Phong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dữ liệu\Bảo trì\Giaiphap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Bảo trì\Giaiphap.Designer.cs">
+      <DependentUpon>Giaiphap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dữ liệu\Bảo trì\Nguyennhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Bảo trì\Nguyennhan.Designer.cs">
+      <DependentUpon>Nguyennhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dữ liệu\Bảo trì\Nhabaotrics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Bảo trì\Nhabaotrics.Designer.cs">
+      <DependentUpon>Nhabaotrics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +102,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tìm kiếm\May.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tìm kiếm\May.Designer.cs">
+      <DependentUpon>May.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tìm kiếm\Nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tìm kiếm\Nhanvien.Designer.cs">
+      <DependentUpon>Nhanvien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -95,10 +137,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Báo cáo\" />
-    <Folder Include="Dữ liệu\Bảo trì\" />
     <Folder Include="Dữ liệu\Phần cứng\" />
-    <Folder Include="Tìm kiếm\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
