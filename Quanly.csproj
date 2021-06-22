@@ -58,6 +58,18 @@
     <Compile Include="Báo cáo\Tienthue.Designer.cs">
       <DependentUpon>Tienthue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dữ liệu\Maytinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Maytinh.Designer.cs">
+      <DependentUpon>Maytinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dữ liệu\Nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Nhanvien.Designer.cs">
+      <DependentUpon>Nhanvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dữ liệu\Phần cứng\Banphim.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,11 +94,11 @@
     <Compile Include="Danh mục\Thuemay.Designer.cs">
       <DependentUpon>Thuemay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Danh mục\Thông tin\Baotrics.cs">
+    <Compile Include="Danh mục\Thông tin\Baotri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Danh mục\Thông tin\Baotrics.Designer.cs">
-      <DependentUpon>Baotrics.cs</DependentUpon>
+    <Compile Include="Danh mục\Thông tin\Baotri.Designer.cs">
+      <DependentUpon>Baotri.cs</DependentUpon>
     </Compile>
     <Compile Include="Danh mục\Thông tin\Phong.cs">
       <SubType>Form</SubType>
@@ -106,11 +118,11 @@
     <Compile Include="Dữ liệu\Bảo trì\Nguyennhan.Designer.cs">
       <DependentUpon>Nguyennhan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dữ liệu\Bảo trì\Nhabaotrics.cs">
+    <Compile Include="Dữ liệu\Bảo trì\Nhabaotri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dữ liệu\Bảo trì\Nhabaotrics.Designer.cs">
-      <DependentUpon>Nhabaotrics.cs</DependentUpon>
+    <Compile Include="Dữ liệu\Bảo trì\Nhabaotri.Designer.cs">
+      <DependentUpon>Nhabaotri.cs</DependentUpon>
     </Compile>
     <Compile Include="Dữ liệu\Phần cứng\Chip.cs">
       <SubType>Form</SubType>
@@ -135,6 +147,12 @@
     </Compile>
     <Compile Include="Dữ liệu\Phần cứng\Ram.Designer.cs">
       <DependentUpon>Ram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dữ liệu\Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions.cs" />
     <Compile Include="Main.cs">
