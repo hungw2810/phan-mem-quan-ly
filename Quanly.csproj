@@ -94,6 +94,18 @@
     <Compile Include="Dữ liệu\Bảo trì\Nhabaotrics.Designer.cs">
       <DependentUpon>Nhabaotrics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dữ liệu\Phần cứng\Chip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Phần cứng\Chip.Designer.cs">
+      <DependentUpon>Chip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dữ liệu\Phần cứng\Ocung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dữ liệu\Phần cứng\Ocung.Designer.cs">
+      <DependentUpon>Ocung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,8 +148,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dữ liệu\Phần cứng\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
