@@ -58,7 +58,7 @@
     <Compile Include="Báo cáo\Tienthue.Designer.cs">
       <DependentUpon>Tienthue.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Functions.cs" />
     <Compile Include="Danh mục\Thuemay.cs">
       <SubType>Form</SubType>
     </Compile>
