@@ -187,6 +187,9 @@
     <EmbeddedResource Include="Dữ liệu\Maytinh.resx">
       <DependentUpon>Maytinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Nhanvien.resx">
+      <DependentUpon>Nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +202,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tìm kiếm\May.resx">
+      <DependentUpon>May.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tìm kiếm\Nhanvien.resx">
+      <DependentUpon>Nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
