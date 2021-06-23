@@ -181,6 +181,12 @@
     <EmbeddedResource Include="Danh mục\Thuemay.resx">
       <DependentUpon>Thuemay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Bảo trì\Nguyennhan.resx">
+      <DependentUpon>Nguyennhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Bảo trì\Nhabaotri.resx">
+      <DependentUpon>Nhabaotri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dữ liệu\Maytinh.resx">
       <DependentUpon>Maytinh.cs</DependentUpon>
     </EmbeddedResource>
