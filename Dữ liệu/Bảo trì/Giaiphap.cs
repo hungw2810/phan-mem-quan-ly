@@ -12,7 +12,7 @@ namespace Quanly.Dữ_liệu.Bảo_trì
 {
     public partial class Giaiphap : Form
     {
-        DataTable tbl;
+        DataTable GP;
         public Giaiphap()
         {
             InitializeComponent();
@@ -20,109 +20,206 @@ namespace Quanly.Dữ_liệu.Bảo_trì
 
         private void Giaiphap_Load(object sender, EventArgs e)
         {
-
+            txtMagiaiphap.Enabled = false;
+            btnLuu.Enabled = false;
+            btnBoqua.Enabled = false;
             Load_DataGridView();
         }
         private void Load_DataGridView()
         {
             string sql;
-            sql = "SELECT * FROM GiaiPhap";
-            tbl = Functions.GetDataToTable(sql);
-            dataGridView1.DataSource = tbl;
-            dataGridView1.Columns[0].HeaderText = "Tên Giải Pháp";
-            dataGridView1.Columns[1].HeaderText = "Chi Phí";
-            dataGridView1.Columns[2].HeaderText = "Thời Gian";
-            dataGridView1.Columns[0].Width = 100;
-            dataGridView1.Columns[1].Width = 150;
-            dataGridView1.Columns[2].Width = 150;
-            dataGridView1.Columns[3].Width = 150;
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
+            sql = "SELECT id_giaiphap, TenGiaiPhap, ChiPhi, ThoiGian FROM GiaiPhap";
+            GP = Functions.GetDataToTable(sql);
+            DataGridView.DataSource = GP;
+            DataGridView.Columns[0].HeaderText = "Mã giải pháp";
+            DataGridView.Columns[1].HeaderText = "Tên Giải Pháp";
+            DataGridView.Columns[2].HeaderText = "Chi Phí";
+            DataGridView.Columns[3].HeaderText = "Thời Gian";
+            DataGridView.Columns[0].Width = 100;
+            DataGridView.Columns[1].Width = 150;
+            DataGridView.Columns[2].Width = 150;
+            DataGridView.Columns[3].Width = 150;
+            DataGridView.AllowUserToAddRows = false;
+            DataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (btnThem.Enabled == false)
-            {
-                MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo",
-MessageBoxButtons.OK, MessageBoxIcon.Information);
-               txtGiaiphap.Focus();
-                return;
-            }
-            if (tbl.Rows.Count == 0)
-            {
-                MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK,
-MessageBoxIcon.Information);
-                return;
-            }
-            txtGiaiphap.Text = dataGridView1.CurrentRow.Cells["TenGiaiPhap"].Value.ToString();
-            txtChiPhi.Text = dataGridView1.CurrentRow.Cells["Tenkhach"].Value.ToString();
-            txtThoigian.Text = dataGridView1.CurrentRow.Cells["Diachi"].Value.ToString();
-            
-
-        }
+        
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            txtGiaiphap.Focus();
+            btnSua.Enabled = false;
             btnXoa.Enabled = false;
-            btnSua.Enabled = false;
-            btnSua.Enabled = false;
-            Reset();
+            btnBoqua.Enabled = true;
+            btnLuu.Enabled = true;
+            btnThem.Enabled = false;
+            ResetValues();
+            txtMagiaiphap.Enabled = true;
+            txtMagiaiphap.Focus();
+
         }
         private void Reset()
         {
-            txtGiaiphap.Text = "";
-            txtChiPhi.Text = "";
+            txtMagiaiphap.Text = "";
+            txtChiphi.Text = "";
+            txtThoigian.Text = "";
             txtThoigian.Text = "";
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            string sql;
+            if (GP.Rows.Count == 0)
+            {
+                MessageBox.Show("Không còn dữ liệu!", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                return;
+            }
+            if (txtMagiaiphap.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (MessageBox.Show("Bạn có muốn xóa không?", "Thông báo",MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                sql = "DELETE GiaiPhap WHERE id_giaiphap=N'" + txtMagiaiphap.Text + "'";
+                Functions.RunSqlDel(sql);
+                Load_DataGridView();
+                ResetValues();
+            }
 
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
             string sql;
-            if (txtGiaiphap.Text.Trim().Length == 0)
+            if (txtMagiaiphap.Text == "")
             {
-                MessageBox.Show("Bạn phải nhập giải pháp", "Thông báo", MessageBoxButtons.OK,
-MessageBoxIcon.Warning);
-                txtGiaiphap.Focus();
+                MessageBox.Show("Bạn phải nhập mã giải pháp", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                txtMagiaiphap.Focus();
                 return;
             }
-            if (txtChiPhi.Text.Trim().Length == 0)
+            if (txtTengiaiphap.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập Chi phí", "Thông báo",
-MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtChiPhi.Focus();
+                MessageBox.Show("Bạn phải nhập tên giải pháp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtMagiaiphap.Focus();
+                return;
+            }
+            if (txtChiphi.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập Chi phí", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtChiphi.Focus();
                 return;
             }
             if (txtThoigian.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập thời gian", "Thông báo", MessageBoxButtons.OK,
-MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn phải nhập thời gian", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 txtThoigian.Focus();
                 return;
             }
             
-            sql = "SELECT TenGiaiPhap FROM tblKhach WHERE Makhach=N'" + txtGiaiphap.Text.Trim() + "'";
+            sql = "SELECT id_giaiphap FROM GiaiPhap WHERE id_giaiphap=N'" + txtMagiaiphap.Text.Trim() + "'";
             if (Functions.CheckKey(sql))
             {
-                MessageBox.Show("Mã khách này đã có, bạn phải nhập mã khác", "Thông báo",
- MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtGiaiphap.Focus();
-                txtGiaiphap.Text = "";
+                MessageBox.Show("Mã khách này đã có, bạn phải nhập mã khác", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtMagiaiphap.Focus();
+                txtMagiaiphap.Text = "";
                 return;
             }
-            sql = "INSERT INTO GiaiPhap(TenGiaiPhap,ChiPhi,ThoiGian) VALUES (N'" +
-txtGiaiphap.Text.Trim() + "',N'" + txtChiPhi.Text.Trim() + "',N'" +
-txtThoigian.Text.Trim() + "')";
+            sql = "INSERT INTO GiaiPhap(id_giaiphap,TenGiaiPhap,ChiPhi,ThoiGian) VALUES (N'" + txtMagiaiphap.Text.Trim() + "',N'" + txtTengiaiphap.Text.Trim() + "',N'" + txtChiphi.Text.Trim() + "',N'" + txtThoigian.Text.Trim() + "')";
             Functions.RunSql(sql);
             Load_DataGridView();
-            Reset();
+            ResetValues();
+            btnXoa.Enabled = true;
+            btnThem.Enabled = true;
+            btnSua.Enabled = true;
+            btnBoqua.Enabled = false;
+            btnLuu.Enabled = false;
+            txtMagiaiphap.Enabled = false;
+        }
 
+        private void ResetValues()
+        {
+            txtMagiaiphap.Text = "";
+            txtTengiaiphap.Text = "";
+            txtChiphi.Text = "";
+            txtThoigian.Text = "";
+        }
+
+
+        private void DataGridView_Click(object sender, EventArgs e)
+        {
+            if (btnThem.Enabled == false)
+            {
+                MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtMagiaiphap.Focus();
+                return;
+            }
+            if (GP.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                return;
+            }
+            txtMagiaiphap.Text = DataGridView.CurrentRow.Cells["id_giaiphap"].Value.ToString();
+            txtTengiaiphap.Text = DataGridView.CurrentRow.Cells["Tengiaiphap"].Value.ToString();
+            txtChiphi.Text = DataGridView.CurrentRow.Cells["ChiPhi"].Value.ToString();
+            txtThoigian.Text = DataGridView.CurrentRow.Cells["ThoiGian"].Value.ToString();
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+            btnBoqua.Enabled = true;
+
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            string sql;
+            if (GP.Rows.Count == 0)
+            {
+                MessageBox.Show("Không còn dữ liệu!", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                return;
+            }
+            if (txtMagiaiphap.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtTengiaiphap.Text == "")
+            {
+                MessageBox.Show("Bạn phải nhập ten giải pháp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtTengiaiphap.Focus();
+                return;
+            }
+            if (txtChiphi.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập Chi phí", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtChiphi.Focus();
+                return;
+            }
+            if (txtThoigian.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập thời gian", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtThoigian.Focus();
+                return;
+            }
+            sql = "UPDATE GiaiPhap SET TenGiaiPhap=N'" + txtTengiaiphap.Text.Trim() +"', ChiPhi='" +txtChiphi.Text + "',Thoigian=N'" + txtThoigian.Text.Trim() + "' WHERE id_giaiphap=N'" + txtMagiaiphap.Text + "'";
+            Functions.RunSql(sql);
+            Load_DataGridView();
+            ResetValues();
+            btnBoqua.Enabled = false;
+        }
+
+        private void btnBoqua_Click(object sender, EventArgs e)
+        {
+            ResetValues();
+            btnBoqua.Enabled = false;
+            btnThem.Enabled = true;
+            btnXoa.Enabled = true;
+            btnSua.Enabled = true;
+            btnLuu.Enabled = false;
+            txtMagiaiphap.Enabled = false;
         }
     }
 }

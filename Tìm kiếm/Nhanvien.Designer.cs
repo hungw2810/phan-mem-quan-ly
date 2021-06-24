@@ -39,34 +39,35 @@ namespace Quanly.Tìm_kiếm
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // cboMaca
             // 
             this.cboMaca.FormattingEnabled = true;
-            this.cboMaca.Location = new System.Drawing.Point(222, 68);
+            this.cboMaca.Location = new System.Drawing.Point(222, 128);
             this.cboMaca.Name = "cboMaca";
-            this.cboMaca.Size = new System.Drawing.Size(265, 24);
+            this.cboMaca.Size = new System.Drawing.Size(266, 24);
             this.cboMaca.TabIndex = 28;
             // 
             // txtTennhanvien
             // 
-            this.txtTennhanvien.Location = new System.Drawing.Point(222, 17);
+            this.txtTennhanvien.Location = new System.Drawing.Point(222, 89);
             this.txtTennhanvien.Name = "txtTennhanvien";
             this.txtTennhanvien.Size = new System.Drawing.Size(266, 22);
             this.txtTennhanvien.TabIndex = 26;
             // 
             // txtGioitinh
             // 
-            this.txtGioitinh.Location = new System.Drawing.Point(222, 128);
+            this.txtGioitinh.Location = new System.Drawing.Point(222, 177);
             this.txtGioitinh.Name = "txtGioitinh";
             this.txtGioitinh.Size = new System.Drawing.Size(266, 22);
             this.txtGioitinh.TabIndex = 27;
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(593, 390);
+            this.btnDong.Location = new System.Drawing.Point(593, 452);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(121, 43);
             this.btnDong.TabIndex = 25;
@@ -76,7 +77,7 @@ namespace Quanly.Tìm_kiếm
             // 
             // btnTimlai
             // 
-            this.btnTimlai.Location = new System.Drawing.Point(327, 390);
+            this.btnTimlai.Location = new System.Drawing.Point(327, 452);
             this.btnTimlai.Name = "btnTimlai";
             this.btnTimlai.Size = new System.Drawing.Size(121, 43);
             this.btnTimlai.TabIndex = 24;
@@ -86,7 +87,7 @@ namespace Quanly.Tìm_kiếm
             // 
             // btnTimkiem
             // 
-            this.btnTimkiem.Location = new System.Drawing.Point(83, 390);
+            this.btnTimkiem.Location = new System.Drawing.Point(83, 452);
             this.btnTimkiem.Name = "btnTimkiem";
             this.btnTimkiem.Size = new System.Drawing.Size(121, 43);
             this.btnTimkiem.TabIndex = 23;
@@ -97,7 +98,7 @@ namespace Quanly.Tìm_kiếm
             // DataGridView
             // 
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(17, 186);
+            this.DataGridView.Location = new System.Drawing.Point(21, 230);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersWidth = 51;
             this.DataGridView.RowTemplate.Height = 24;
@@ -107,7 +108,7 @@ namespace Quanly.Tìm_kiếm
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(98, 133);
+            this.label3.Location = new System.Drawing.Point(98, 182);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 17);
             this.label3.TabIndex = 21;
@@ -116,7 +117,7 @@ namespace Quanly.Tìm_kiếm
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(98, 75);
+            this.label2.Location = new System.Drawing.Point(98, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 17);
             this.label2.TabIndex = 20;
@@ -125,17 +126,29 @@ namespace Quanly.Tìm_kiếm
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(98, 22);
+            this.label1.Location = new System.Drawing.Point(98, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 17);
             this.label1.TabIndex = 19;
             this.label1.Text = "Tên nhân viên:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(193, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(387, 44);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Tìm Kiếm Nhân Viên";
+            // 
             // Nhanvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(815, 515);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.cboMaca);
             this.Controls.Add(this.txtTennhanvien);
             this.Controls.Add(this.txtGioitinh);
@@ -167,5 +180,6 @@ namespace Quanly.Tìm_kiếm
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }

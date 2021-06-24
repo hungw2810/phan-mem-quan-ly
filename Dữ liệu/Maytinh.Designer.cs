@@ -67,7 +67,7 @@ namespace Quanly.Dữ_liệu
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Chocolate;
-            this.label5.Location = new System.Drawing.Point(413, 62);
+            this.label5.Location = new System.Drawing.Point(389, 36);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(229, 55);
             this.label5.TabIndex = 104;
@@ -75,10 +75,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(881, 733);
+            this.btnDong.Location = new System.Drawing.Point(919, 716);
             this.btnDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(101, 31);
+            this.btnDong.Size = new System.Drawing.Size(141, 41);
             this.btnDong.TabIndex = 103;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
@@ -86,10 +86,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnBoqua
             // 
-            this.btnBoqua.Location = new System.Drawing.Point(731, 733);
+            this.btnBoqua.Location = new System.Drawing.Point(749, 716);
             this.btnBoqua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBoqua.Name = "btnBoqua";
-            this.btnBoqua.Size = new System.Drawing.Size(101, 31);
+            this.btnBoqua.Size = new System.Drawing.Size(141, 41);
             this.btnBoqua.TabIndex = 102;
             this.btnBoqua.Text = "Bỏ qua";
             this.btnBoqua.UseVisualStyleBackColor = true;
@@ -97,10 +97,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(587, 733);
+            this.btnLuu.Location = new System.Drawing.Point(582, 716);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(101, 31);
+            this.btnLuu.Size = new System.Drawing.Size(141, 41);
             this.btnLuu.TabIndex = 101;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -108,10 +108,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(432, 733);
+            this.btnSua.Location = new System.Drawing.Point(416, 716);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(101, 31);
+            this.btnSua.Size = new System.Drawing.Size(141, 41);
             this.btnSua.TabIndex = 100;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -119,10 +119,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(276, 733);
+            this.btnXoa.Location = new System.Drawing.Point(243, 716);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(101, 31);
+            this.btnXoa.Size = new System.Drawing.Size(141, 41);
             this.btnXoa.TabIndex = 99;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -130,10 +130,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(131, 733);
+            this.btnThem.Location = new System.Drawing.Point(75, 716);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(101, 31);
+            this.btnThem.Size = new System.Drawing.Size(141, 41);
             this.btnThem.TabIndex = 98;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -142,7 +142,7 @@ namespace Quanly.Dữ_liệu
             // DataGridView
             // 
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(12, 475);
+            this.DataGridView.Location = new System.Drawing.Point(17, 428);
             this.DataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersWidth = 51;
@@ -154,95 +154,95 @@ namespace Quanly.Dữ_liệu
             // cboMatainghe
             // 
             this.cboMatainghe.FormattingEnabled = true;
-            this.cboMatainghe.Location = new System.Drawing.Point(701, 244);
+            this.cboMatainghe.Location = new System.Drawing.Point(674, 229);
             this.cboMatainghe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMatainghe.Name = "cboMatainghe";
-            this.cboMatainghe.Size = new System.Drawing.Size(323, 24);
+            this.cboMatainghe.Size = new System.Drawing.Size(281, 24);
             this.cboMatainghe.TabIndex = 95;
             // 
             // cboMabanphim
             // 
             this.cboMabanphim.FormattingEnabled = true;
-            this.cboMabanphim.Location = new System.Drawing.Point(701, 199);
+            this.cboMabanphim.Location = new System.Drawing.Point(674, 186);
             this.cboMabanphim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMabanphim.Name = "cboMabanphim";
-            this.cboMabanphim.Size = new System.Drawing.Size(323, 24);
+            this.cboMabanphim.Size = new System.Drawing.Size(281, 24);
             this.cboMabanphim.TabIndex = 94;
             // 
             // cboMachuot
             // 
             this.cboMachuot.FormattingEnabled = true;
-            this.cboMachuot.Location = new System.Drawing.Point(701, 149);
+            this.cboMachuot.Location = new System.Drawing.Point(674, 136);
             this.cboMachuot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMachuot.Name = "cboMachuot";
-            this.cboMachuot.Size = new System.Drawing.Size(323, 24);
+            this.cboMachuot.Size = new System.Drawing.Size(281, 24);
             this.cboMachuot.TabIndex = 93;
             // 
             // cboMamanhinh
             // 
             this.cboMamanhinh.FormattingEnabled = true;
-            this.cboMamanhinh.Location = new System.Drawing.Point(193, 399);
+            this.cboMamanhinh.Location = new System.Drawing.Point(227, 376);
             this.cboMamanhinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMamanhinh.Name = "cboMamanhinh";
-            this.cboMamanhinh.Size = new System.Drawing.Size(323, 24);
+            this.cboMamanhinh.Size = new System.Drawing.Size(287, 24);
             this.cboMamanhinh.TabIndex = 92;
             // 
             // cboMaram
             // 
             this.cboMaram.FormattingEnabled = true;
-            this.cboMaram.Location = new System.Drawing.Point(191, 343);
+            this.cboMaram.Location = new System.Drawing.Point(225, 326);
             this.cboMaram.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMaram.Name = "cboMaram";
-            this.cboMaram.Size = new System.Drawing.Size(323, 24);
+            this.cboMaram.Size = new System.Drawing.Size(289, 24);
             this.cboMaram.TabIndex = 91;
             // 
             // cboMachip
             // 
             this.cboMachip.FormattingEnabled = true;
-            this.cboMachip.Location = new System.Drawing.Point(191, 295);
+            this.cboMachip.Location = new System.Drawing.Point(225, 284);
             this.cboMachip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMachip.Name = "cboMachip";
-            this.cboMachip.Size = new System.Drawing.Size(323, 24);
+            this.cboMachip.Size = new System.Drawing.Size(289, 24);
             this.cboMachip.TabIndex = 90;
             // 
             // cboMaocung
             // 
             this.cboMaocung.FormattingEnabled = true;
-            this.cboMaocung.Location = new System.Drawing.Point(191, 244);
+            this.cboMaocung.Location = new System.Drawing.Point(225, 233);
             this.cboMaocung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMaocung.Name = "cboMaocung";
-            this.cboMaocung.Size = new System.Drawing.Size(323, 24);
+            this.cboMaocung.Size = new System.Drawing.Size(289, 24);
             this.cboMaocung.TabIndex = 96;
             // 
             // cboMaphong
             // 
             this.cboMaphong.FormattingEnabled = true;
-            this.cboMaphong.Location = new System.Drawing.Point(191, 199);
+            this.cboMaphong.Location = new System.Drawing.Point(225, 184);
             this.cboMaphong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMaphong.Name = "cboMaphong";
-            this.cboMaphong.Size = new System.Drawing.Size(323, 24);
+            this.cboMaphong.Size = new System.Drawing.Size(289, 24);
             this.cboMaphong.TabIndex = 89;
             // 
             // txtGhichu
             // 
-            this.txtGhichu.Location = new System.Drawing.Point(701, 346);
+            this.txtGhichu.Location = new System.Drawing.Point(674, 326);
             this.txtGhichu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGhichu.Name = "txtGhichu";
-            this.txtGhichu.Size = new System.Drawing.Size(325, 22);
+            this.txtGhichu.Size = new System.Drawing.Size(281, 22);
             this.txtGhichu.TabIndex = 88;
             // 
             // txtMamay
             // 
-            this.txtMamay.Location = new System.Drawing.Point(191, 149);
+            this.txtMamay.Location = new System.Drawing.Point(225, 134);
             this.txtMamay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMamay.Name = "txtMamay";
-            this.txtMamay.Size = new System.Drawing.Size(325, 22);
+            this.txtMamay.Size = new System.Drawing.Size(289, 22);
             this.txtMamay.TabIndex = 87;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(584, 351);
+            this.label16.Location = new System.Drawing.Point(557, 331);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(61, 17);
             this.label16.TabIndex = 86;
@@ -251,7 +251,7 @@ namespace Quanly.Dữ_liệu
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(587, 298);
+            this.label15.Location = new System.Drawing.Point(560, 283);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(77, 17);
             this.label15.TabIndex = 85;
@@ -260,7 +260,7 @@ namespace Quanly.Dữ_liệu
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(587, 247);
+            this.label14.Location = new System.Drawing.Point(560, 232);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(68, 17);
             this.label14.TabIndex = 84;
@@ -269,7 +269,7 @@ namespace Quanly.Dữ_liệu
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(587, 201);
+            this.label13.Location = new System.Drawing.Point(560, 188);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(72, 17);
             this.label13.TabIndex = 83;
@@ -278,7 +278,7 @@ namespace Quanly.Dữ_liệu
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(587, 149);
+            this.label9.Location = new System.Drawing.Point(560, 136);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 17);
             this.label9.TabIndex = 82;
@@ -287,7 +287,7 @@ namespace Quanly.Dữ_liệu
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(77, 407);
+            this.label8.Location = new System.Drawing.Point(111, 384);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 17);
             this.label8.TabIndex = 81;
@@ -296,7 +296,7 @@ namespace Quanly.Dữ_liệu
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(77, 349);
+            this.label7.Location = new System.Drawing.Point(111, 332);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 17);
             this.label7.TabIndex = 80;
@@ -305,7 +305,7 @@ namespace Quanly.Dữ_liệu
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(77, 298);
+            this.label6.Location = new System.Drawing.Point(111, 287);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 17);
             this.label6.TabIndex = 79;
@@ -314,7 +314,7 @@ namespace Quanly.Dữ_liệu
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(77, 247);
+            this.label4.Location = new System.Drawing.Point(111, 236);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 17);
             this.label4.TabIndex = 78;
@@ -323,7 +323,7 @@ namespace Quanly.Dữ_liệu
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(77, 201);
+            this.label3.Location = new System.Drawing.Point(111, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 17);
             this.label3.TabIndex = 77;
@@ -332,7 +332,7 @@ namespace Quanly.Dữ_liệu
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(77, 154);
+            this.label1.Location = new System.Drawing.Point(111, 139);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 17);
             this.label1.TabIndex = 76;
@@ -340,10 +340,10 @@ namespace Quanly.Dữ_liệu
             // 
             // txtTinhtrang
             // 
-            this.txtTinhtrang.Location = new System.Drawing.Point(701, 297);
+            this.txtTinhtrang.Location = new System.Drawing.Point(674, 282);
             this.txtTinhtrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTinhtrang.Name = "txtTinhtrang";
-            this.txtTinhtrang.Size = new System.Drawing.Size(325, 22);
+            this.txtTinhtrang.Size = new System.Drawing.Size(281, 22);
             this.txtTinhtrang.TabIndex = 105;
             // 
             // Maytinh

@@ -1,7 +1,7 @@
 ﻿
-namespace Quanly.Báo_cáo
+namespace Quanly.Danh_mục
 {
-    partial class Baotri
+    partial class Thongtinthue
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,10 @@ namespace Quanly.Báo_cáo
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Baotri
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 765);
-            this.Name = "Baotri";
-            this.Text = "Baotri";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Thongtinthue";
         }
 
         #endregion
