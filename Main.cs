@@ -163,5 +163,6 @@ namespace Quanly
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
         }
+
     }
 }

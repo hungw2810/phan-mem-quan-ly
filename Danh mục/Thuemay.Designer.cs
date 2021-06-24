@@ -35,6 +35,7 @@ namespace Quanly.Danh_mục
             this.btnRefresh = new System.Windows.Forms.Button();
             this.cboPhong = new System.Windows.Forms.ComboBox();
             this.btnTim = new System.Windows.Forms.Button();
+            this.txtMamay = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,6 +72,7 @@ namespace Quanly.Danh_mục
             this.dtgv1.Name = "dtgv1";
             this.dtgv1.Size = new System.Drawing.Size(905, 437);
             this.dtgv1.TabIndex = 2;
+            this.dtgv1.Click += new System.EventHandler(this.dtgv1_Click);
             // 
             // btnRefresh
             // 
@@ -88,7 +90,7 @@ namespace Quanly.Danh_mục
             // 
             this.cboPhong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboPhong.FormattingEnabled = true;
-            this.cboPhong.Location = new System.Drawing.Point(461, 15);
+            this.cboPhong.Location = new System.Drawing.Point(434, 18);
             this.cboPhong.Name = "cboPhong";
             this.cboPhong.Size = new System.Drawing.Size(178, 25);
             this.cboPhong.TabIndex = 4;
@@ -98,13 +100,20 @@ namespace Quanly.Danh_mục
             // 
             this.btnTim.BackColor = System.Drawing.Color.White;
             this.btnTim.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(646, 15);
+            this.btnTim.Location = new System.Drawing.Point(618, 16);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(87, 27);
+            this.btnTim.Size = new System.Drawing.Size(74, 27);
             this.btnTim.TabIndex = 5;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = false;
             this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+            // 
+            // txtMamay
+            // 
+            this.txtMamay.Location = new System.Drawing.Point(758, 20);
+            this.txtMamay.Name = "txtMamay";
+            this.txtMamay.Size = new System.Drawing.Size(129, 22);
+            this.txtMamay.TabIndex = 6;
             // 
             // Thuemay
             // 
@@ -112,6 +121,7 @@ namespace Quanly.Danh_mục
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(933, 519);
+            this.Controls.Add(this.txtMamay);
             this.Controls.Add(this.btnTim);
             this.Controls.Add(this.cboPhong);
             this.Controls.Add(this.btnRefresh);
@@ -124,6 +134,7 @@ namespace Quanly.Danh_mục
             this.Load += new System.EventHandler(this.Thuemay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -135,5 +146,6 @@ namespace Quanly.Danh_mục
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.ComboBox cboPhong;
         private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.TextBox txtMamay;
     }
 }
