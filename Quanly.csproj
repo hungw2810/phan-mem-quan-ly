@@ -58,6 +58,12 @@
     <Compile Include="Báo cáo\Tienthue.Designer.cs">
       <DependentUpon>Tienthue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Danh mục\Thue2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danh mục\Thue2.Designer.cs">
+      <DependentUpon>Thue2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dữ liệu\Maytinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </Compile>
     <EmbeddedResource Include="Báo cáo\Baotri.resx">
       <DependentUpon>Baotri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danh mục\Thue2.resx">
+      <DependentUpon>Thue2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Danh mục\Thuemay.resx">
       <DependentUpon>Thuemay.cs</DependentUpon>
