@@ -27,13 +27,17 @@ namespace Quanly.Báo_cáo
         }
         private void Load_DataGridView()
         {
-           
-            
+
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void cbxThang_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
@@ -45,23 +49,23 @@ namespace Quanly.Báo_cáo
             XX = Functions.GetDataToTable(tt);
             
             dataGridView2.DataSource = XX;
-            if (txtThang.Text == "")
+            if (cbxThang.Text == "")
             {
                 MessageBox.Show("Bạn phải nhập tháng", "Thông Báo", MessageBoxButtons.OK);
             }
-            if (txtNam.Text == "")
+            if (cbxNam.Text == "")
             {
                 MessageBox.Show("Bạn phải nhập năm", "Thông Báo", MessageBoxButtons.OK);
             }
             string sql;
             sql = "Select * from ThueMay Where 1=1"; dataGridView1.DataSource = TT; 
             TT = Functions.GetDataToTable(sql);
-            if (txtThang.Text != "")
+            if (cbxThang.Text != "")
             {
-                sql = sql + "AND MONTH(NgayThue) =" + txtThang.Text;    
+                sql = sql + "AND MONTH(NgayThue) =" + cbxThang.Text;    
             }
-            if (txtNam.Text != "")
-                sql = sql + "AND YEAR(NgayThue) =" + txtNam.Text;
+            if (cbxNam.Text != "")
+                sql = sql + "AND YEAR(NgayThue) =" + cbxNam.Text;
              txtTongTien.Text=dataGridView2.CurrentRow.Cells[0].Value.ToString();
             Load_DataGridView();
         }
