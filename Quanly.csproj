@@ -229,6 +229,9 @@
     <EmbeddedResource Include="Dữ liệu\Phần cứng\Tainghe.resx">
       <DependentUpon>Tainghe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
