@@ -144,8 +144,8 @@ namespace Quanly.Danh_mục
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.Blue;
+            this.lblTime.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblTime.Location = new System.Drawing.Point(794, 24);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(0, 17);
