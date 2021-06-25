@@ -310,16 +310,7 @@ namespace Quanly.Dữ_liệu
                 cboMatainghe.Focus();
                 return;
             }
-            //   soluong = Convert.ToDouble(Class.Functions.GetFieldValues("SELECT SoMay FROM Phong WHERE id_phong=N'" + cboMaphong.SelectedValue + "'"));
-            //   slmoi = soluong - 1;
-            //   sql = "UPDATE Phong SET SoMay=" + slmoi + "WHERE id_phong =N'" + cboMaphong.SelectedValue + "'";
-            //   Class.Functions.RunSql(sql);
             sql = "UPDATE MayTinh SET id_phong=N'" + cboMaphong.SelectedValue.ToString() + "',id_ocung = N'" + cboMaocung.SelectedValue.ToString() + "',id_chip = N'" + cboMachip.SelectedValue.ToString() + "',id_ram = N'" + cboMaram.SelectedValue.ToString() + "',id_man = N'" + cboMamanhinh.SelectedValue.ToString() + "',id_tainghe = N'" + cboMatainghe.SelectedValue.ToString() + "',id_chuot = N'" + cboMachuot.SelectedValue.ToString() + "',id_banphim = N'" + cboMabanphim.SelectedValue.ToString() + "',TinhTrang=N'" + txtTinhtrang.Text.Trim() + "',GhiChu=N'" + txtGhichu.Text.Trim() + "'WHERE id_may=N'" + txtMamay.Text + "'";
-            //   Class.Functions.RunSql(sql);
-            //    soluong = Convert.ToDouble(Class.Functions.GetFieldValues("SELECT SoMay FROM Phong WHERE id_phong=N'" + cboMaphong.SelectedValue + "'"));
-            //    slmoi = soluong + 1;
-            //   sql = "UPDATE Phong SET SoMay=" + slmoi + "WHERE id_phong =N'" + cboMaphong.SelectedValue + "'";
-
             Functions.RunSql(sql);
             Load_DataGridView();
             resetvalues();
