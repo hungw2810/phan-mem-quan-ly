@@ -66,7 +66,7 @@ namespace Quanly.Dữ_liệu.Bảo_trì
             // 
             this.lblNguyennhan.AutoSize = true;
             this.lblNguyennhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNguyennhan.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblNguyennhan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblNguyennhan.Location = new System.Drawing.Point(280, 32);
             this.lblNguyennhan.Name = "lblNguyennhan";
             this.lblNguyennhan.Size = new System.Drawing.Size(230, 33);
@@ -162,7 +162,7 @@ namespace Quanly.Dữ_liệu.Bảo_trì
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 463);
             this.Controls.Add(this.btnBoqua);
             this.Controls.Add(this.btnDong);
