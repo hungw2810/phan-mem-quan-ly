@@ -58,6 +58,12 @@
     <Compile Include="Báo cáo\Tienthue.Designer.cs">
       <DependentUpon>Tienthue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Danh mục\Tinhtien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danh mục\Tinhtien.Designer.cs">
+      <DependentUpon>Tinhtien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dữ liệu\Maytinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Danh mục\Thông tin\Baotri.resx">
       <DependentUpon>Baotri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danh mục\Tinhtien.resx">
+      <DependentUpon>Tinhtien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dữ liệu\Bảo trì\Giaiphap.resx">
       <DependentUpon>Giaiphap.cs</DependentUpon>
