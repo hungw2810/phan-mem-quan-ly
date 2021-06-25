@@ -47,68 +47,72 @@ namespace Quanly.Dữ_liệu
             // 
             // txtMaphong
             // 
-            this.txtMaphong.Location = new System.Drawing.Point(260, 56);
+            this.txtMaphong.Location = new System.Drawing.Point(145, 46);
             this.txtMaphong.Name = "txtMaphong";
-            this.txtMaphong.Size = new System.Drawing.Size(296, 22);
+            this.txtMaphong.Size = new System.Drawing.Size(232, 22);
             this.txtMaphong.TabIndex = 0;
             // 
             // txtSomay
             // 
-            this.txtSomay.Location = new System.Drawing.Point(260, 135);
+            this.txtSomay.Location = new System.Drawing.Point(145, 99);
             this.txtSomay.Name = "txtSomay";
-            this.txtSomay.Size = new System.Drawing.Size(296, 22);
+            this.txtSomay.Size = new System.Drawing.Size(232, 22);
             this.txtSomay.TabIndex = 1;
             // 
             // txtDonGia
             // 
-            this.txtDonGia.Location = new System.Drawing.Point(260, 217);
+            this.txtDonGia.Location = new System.Drawing.Point(145, 150);
             this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(296, 22);
+            this.txtDonGia.Size = new System.Drawing.Size(232, 22);
             this.txtDonGia.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(136, 56);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.Size = new System.Drawing.Size(88, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "Mã phòng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(136, 135);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(29, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 17);
+            this.label2.Size = new System.Drawing.Size(71, 22);
             this.label2.TabIndex = 4;
             this.label2.Text = "Số Máy";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(136, 217);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(29, 150);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 17);
+            this.label3.Size = new System.Drawing.Size(73, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Đơn giá";
             // 
             // DataGridView
             // 
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(69, 313);
+            this.DataGridView.Location = new System.Drawing.Point(422, 22);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersWidth = 51;
             this.DataGridView.RowTemplate.Height = 24;
-            this.DataGridView.Size = new System.Drawing.Size(670, 150);
+            this.DataGridView.Size = new System.Drawing.Size(441, 173);
             this.DataGridView.TabIndex = 6;
             this.DataGridView.Click += new System.EventHandler(this.DataGridView_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(33, 531);
+            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Location = new System.Drawing.Point(27, 223);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.Size = new System.Drawing.Size(90, 41);
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm ";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -116,9 +120,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(157, 531);
+            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Location = new System.Drawing.Point(155, 223);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.Size = new System.Drawing.Size(84, 41);
             this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -126,9 +131,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(289, 531);
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(281, 223);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.Size = new System.Drawing.Size(83, 41);
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -136,9 +142,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(422, 531);
+            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Location = new System.Drawing.Point(422, 223);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.Size = new System.Drawing.Size(73, 41);
             this.btnLuu.TabIndex = 10;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -146,9 +153,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnBoqua
             // 
-            this.btnBoqua.Location = new System.Drawing.Point(565, 531);
+            this.btnBoqua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBoqua.Location = new System.Drawing.Point(543, 223);
             this.btnBoqua.Name = "btnBoqua";
-            this.btnBoqua.Size = new System.Drawing.Size(75, 23);
+            this.btnBoqua.Size = new System.Drawing.Size(95, 41);
             this.btnBoqua.TabIndex = 11;
             this.btnBoqua.Text = "Bỏ qua";
             this.btnBoqua.UseVisualStyleBackColor = true;
@@ -156,9 +164,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(713, 531);
+            this.btnDong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDong.Location = new System.Drawing.Point(699, 223);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(75, 23);
+            this.btnDong.Size = new System.Drawing.Size(94, 40);
             this.btnDong.TabIndex = 12;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
@@ -168,7 +177,7 @@ namespace Quanly.Dữ_liệu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 682);
+            this.ClientSize = new System.Drawing.Size(907, 292);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnBoqua);
             this.Controls.Add(this.btnLuu);

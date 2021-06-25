@@ -138,7 +138,7 @@ namespace Quanly
 
         private void mnu_dl_pcChuot_Click(object sender, EventArgs e)
         {
-            Dữ_liệu.Phần_cứng.Chuot f = new Dữ_liệu.Phần_cứng.Chuot();
+            Dữ_liệu.Phần_cứng.CHUỘT f = new Dữ_liệu.Phần_cứng.CHUỘT();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
         }

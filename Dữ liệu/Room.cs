@@ -197,5 +197,7 @@ namespace Quanly.Dữ_liệu
         {
             this.Close();
         }
+
+       
     }
 }
