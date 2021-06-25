@@ -184,6 +184,9 @@
     <EmbeddedResource Include="Báo cáo\Baotri.resx">
       <DependentUpon>Baotri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Báo cáo\Tienthue.resx">
+      <DependentUpon>Tienthue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Danh mục\Thuemay.resx">
       <DependentUpon>Thuemay.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +211,30 @@
     <EmbeddedResource Include="Dữ liệu\Nhanvien.resx">
       <DependentUpon>Nhanvien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Phần cứng\Banphim.resx">
+      <DependentUpon>Banphim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Phần cứng\Chip.resx">
+      <DependentUpon>Chip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Phần cứng\Chuot.resx">
+      <DependentUpon>Chuot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Phần cứng\Manhinh.resx">
+      <DependentUpon>Manhinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Phần cứng\Ocung.resx">
+      <DependentUpon>Ocung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Phần cứng\Ram.resx">
+      <DependentUpon>Ram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Phần cứng\Tainghe.resx">
+      <DependentUpon>Tainghe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dữ liệu\Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +246,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Tìm kiếm\May.resx">
       <DependentUpon>May.cs</DependentUpon>
@@ -239,6 +267,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\GRN.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
