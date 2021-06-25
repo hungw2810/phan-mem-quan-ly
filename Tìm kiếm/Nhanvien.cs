@@ -32,7 +32,6 @@ namespace Quanly.Tìm_kiếm
                     Ctl.Text = "";
             txtTennhanvien.Focus();
             cboMaca.Text = "";
-            txtGioitinh.Text = "";
             txtTennhanvien.Enabled = true;
             txtGioitinh.Enabled = true;
             cboMaca.Enabled = true;

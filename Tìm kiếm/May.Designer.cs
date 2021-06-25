@@ -37,13 +37,14 @@ namespace Quanly.Tìm_kiếm
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTinhtrang = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // cboPhong
             // 
             this.cboPhong.FormattingEnabled = true;
-            this.cboPhong.Location = new System.Drawing.Point(214, 16);
+            this.cboPhong.Location = new System.Drawing.Point(218, 83);
             this.cboPhong.Name = "cboPhong";
             this.cboPhong.Size = new System.Drawing.Size(304, 24);
             this.cboPhong.TabIndex = 34;
@@ -91,7 +92,7 @@ namespace Quanly.Tìm_kiếm
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(98, 91);
+            this.label3.Location = new System.Drawing.Point(102, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 17);
             this.label3.TabIndex = 29;
@@ -100,7 +101,7 @@ namespace Quanly.Tìm_kiếm
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(98, 23);
+            this.label1.Location = new System.Drawing.Point(102, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 17);
             this.label1.TabIndex = 28;
@@ -108,16 +109,28 @@ namespace Quanly.Tìm_kiếm
             // 
             // txtTinhtrang
             // 
-            this.txtTinhtrang.Location = new System.Drawing.Point(214, 86);
+            this.txtTinhtrang.Location = new System.Drawing.Point(218, 141);
             this.txtTinhtrang.Name = "txtTinhtrang";
             this.txtTinhtrang.Size = new System.Drawing.Size(304, 22);
             this.txtTinhtrang.TabIndex = 35;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(183, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(366, 44);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Tìm Kiếm Máy Tính";
             // 
             // May
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTinhtrang);
             this.Controls.Add(this.cboPhong);
             this.Controls.Add(this.btnDong);
@@ -144,5 +157,6 @@ namespace Quanly.Tìm_kiếm
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTinhtrang;
+        private System.Windows.Forms.Label label4;
     }
 }
