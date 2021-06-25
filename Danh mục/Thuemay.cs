@@ -18,13 +18,13 @@ namespace Quanly.Danh_mục
         public Thuemay()
         {
             InitializeComponent();
+            timer1.Start();
         }
 
         private void Thuemay_Load(object sender, EventArgs e)
         {
             txtMamay.Enabled = false;
             btnThue.Enabled = false;
-            btnTinhtien.Enabled = true;
             Functions.FillCombo("SELECT id_phong FROM Phong ", cboPhong, "id_phong", "id_phong");
             Functions.FillCombo("SELECT id_NV,TenNV FROM NhanVien a INNER JOIN CaLam b on a.id_ca=b.id_ca WHERE (SELECT CONVERT(char(7),CURRENT_TIMESTAMP,108)) BETWEEN time_start AND time_end", cboNhanvien, "id_NV", "TenNV");
             ResetValues();
@@ -81,20 +81,8 @@ namespace Quanly.Danh_mục
             Functions.RunSql(sql);
             ResetValues();
             btnThue.Enabled = false;
-            btnTinhtien.Enabled = true;
         }
 
-        private void btnTinhtien_Click(object sender, EventArgs e)
-        {
-            Tinhtien f = new Tinhtien();
-            f.Show();
-            f.StartPosition = FormStartPosition.CenterScreen;
-        }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            ResetValues();
-        }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
@@ -123,6 +111,21 @@ namespace Quanly.Danh_mục
             cboNhanvien.SelectedIndex = -1;
             cboNhanvien.Text = "--Nhân viên";
             dtgv1.DataSource = null;
+        }
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            ResetValues();
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime time = DateTime.Now;
+            lblTime.Text = time.ToString("HH:mm:ss");
         }
     }
 }

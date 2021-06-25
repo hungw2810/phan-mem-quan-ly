@@ -29,8 +29,8 @@ namespace Quanly.Danh_mục
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnThue = new System.Windows.Forms.Button();
-            this.btnTinhtien = new System.Windows.Forms.Button();
             this.dtgv1 = new System.Windows.Forms.DataGridView();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.cboPhong = new System.Windows.Forms.ComboBox();
@@ -38,6 +38,9 @@ namespace Quanly.Danh_mục
             this.txtMamay = new System.Windows.Forms.TextBox();
             this.txtTenkhach = new System.Windows.Forms.TextBox();
             this.cboNhanvien = new System.Windows.Forms.ComboBox();
+            this.btnDong = new System.Windows.Forms.Button();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,42 +50,30 @@ namespace Quanly.Danh_mục
             this.btnThue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnThue.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnThue.ImageKey = "(none)";
-            this.btnThue.Location = new System.Drawing.Point(588, 48);
+            this.btnThue.Location = new System.Drawing.Point(587, 407);
             this.btnThue.Name = "btnThue";
-            this.btnThue.Size = new System.Drawing.Size(87, 28);
+            this.btnThue.Size = new System.Drawing.Size(87, 25);
             this.btnThue.TabIndex = 0;
             this.btnThue.Text = "Thuê";
             this.btnThue.UseVisualStyleBackColor = true;
             this.btnThue.Click += new System.EventHandler(this.btnThue_Click);
             // 
-            // btnTinhtien
-            // 
-            this.btnTinhtien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTinhtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnTinhtien.Location = new System.Drawing.Point(698, 49);
-            this.btnTinhtien.Name = "btnTinhtien";
-            this.btnTinhtien.Size = new System.Drawing.Size(87, 27);
-            this.btnTinhtien.TabIndex = 1;
-            this.btnTinhtien.Text = "Tính tiền";
-            this.btnTinhtien.UseVisualStyleBackColor = true;
-            this.btnTinhtien.Click += new System.EventHandler(this.btnTinhtien_Click);
-            // 
             // dtgv1
             // 
             this.dtgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv1.Location = new System.Drawing.Point(14, 88);
+            this.dtgv1.Location = new System.Drawing.Point(12, 64);
             this.dtgv1.Name = "dtgv1";
-            this.dtgv1.Size = new System.Drawing.Size(905, 417);
+            this.dtgv1.Size = new System.Drawing.Size(905, 322);
             this.dtgv1.TabIndex = 2;
             this.dtgv1.Click += new System.EventHandler(this.dtgv1_Click);
             // 
             // btnRefresh
             // 
             this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnRefresh.Location = new System.Drawing.Point(815, 49);
+            this.btnRefresh.ForeColor = System.Drawing.Color.Black;
+            this.btnRefresh.Location = new System.Drawing.Point(691, 407);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(87, 27);
+            this.btnRefresh.Size = new System.Drawing.Size(87, 25);
             this.btnRefresh.TabIndex = 3;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -92,7 +83,7 @@ namespace Quanly.Danh_mục
             // 
             this.cboPhong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboPhong.FormattingEnabled = true;
-            this.cboPhong.Location = new System.Drawing.Point(119, 12);
+            this.cboPhong.Location = new System.Drawing.Point(87, 22);
             this.cboPhong.Name = "cboPhong";
             this.cboPhong.Size = new System.Drawing.Size(178, 25);
             this.cboPhong.TabIndex = 4;
@@ -102,7 +93,7 @@ namespace Quanly.Danh_mục
             // 
             this.btnTim.BackColor = System.Drawing.Color.White;
             this.btnTim.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(315, 10);
+            this.btnTim.Location = new System.Drawing.Point(283, 20);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(74, 27);
             this.btnTim.TabIndex = 5;
@@ -113,7 +104,7 @@ namespace Quanly.Danh_mục
             // txtMamay
             // 
             this.txtMamay.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMamay.Location = new System.Drawing.Point(36, 49);
+            this.txtMamay.Location = new System.Drawing.Point(32, 407);
             this.txtMamay.Name = "txtMamay";
             this.txtMamay.Size = new System.Drawing.Size(156, 25);
             this.txtMamay.TabIndex = 6;
@@ -121,7 +112,7 @@ namespace Quanly.Danh_mục
             // txtTenkhach
             // 
             this.txtTenkhach.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenkhach.Location = new System.Drawing.Point(218, 49);
+            this.txtTenkhach.Location = new System.Drawing.Point(213, 407);
             this.txtTenkhach.Name = "txtTenkhach";
             this.txtTenkhach.Size = new System.Drawing.Size(156, 25);
             this.txtTenkhach.TabIndex = 7;
@@ -132,18 +123,46 @@ namespace Quanly.Danh_mục
             // 
             this.cboNhanvien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNhanvien.FormattingEnabled = true;
-            this.cboNhanvien.Location = new System.Drawing.Point(399, 49);
+            this.cboNhanvien.Location = new System.Drawing.Point(390, 407);
             this.cboNhanvien.Name = "cboNhanvien";
             this.cboNhanvien.Size = new System.Drawing.Size(153, 25);
             this.cboNhanvien.TabIndex = 8;
             this.cboNhanvien.Text = "--Nhân viên";
+            // 
+            // btnDong
+            // 
+            this.btnDong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDong.ForeColor = System.Drawing.Color.Black;
+            this.btnDong.Location = new System.Drawing.Point(797, 407);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(87, 25);
+            this.btnDong.TabIndex = 9;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.Blue;
+            this.lblTime.Location = new System.Drawing.Point(794, 24);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(0, 17);
+            this.lblTime.TabIndex = 10;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Thuemay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(933, 519);
+            this.ClientSize = new System.Drawing.Size(933, 454);
+            this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.btnDong);
             this.Controls.Add(this.cboNhanvien);
             this.Controls.Add(this.txtTenkhach);
             this.Controls.Add(this.txtMamay);
@@ -151,7 +170,6 @@ namespace Quanly.Danh_mục
             this.Controls.Add(this.cboPhong);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.dtgv1);
-            this.Controls.Add(this.btnTinhtien);
             this.Controls.Add(this.btnThue);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Thuemay";
@@ -166,7 +184,6 @@ namespace Quanly.Danh_mục
         #endregion
 
         private System.Windows.Forms.Button btnThue;
-        private System.Windows.Forms.Button btnTinhtien;
         private System.Windows.Forms.DataGridView dtgv1;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.ComboBox cboPhong;
@@ -174,5 +191,8 @@ namespace Quanly.Danh_mục
         private System.Windows.Forms.TextBox txtMamay;
         private System.Windows.Forms.TextBox txtTenkhach;
         private System.Windows.Forms.ComboBox cboNhanvien;
+        private System.Windows.Forms.Button btnDong;
+        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Timer timer1;
     }
 }

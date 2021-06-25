@@ -164,5 +164,11 @@ namespace Quanly
             f.Show();
         }
 
+        private void mnuTinhtien_Click(object sender, EventArgs e)
+        {
+            Danh_mục.Tinhtien f = new Danh_mục.Tinhtien();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
     }
 }
