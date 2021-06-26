@@ -48,7 +48,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(44, 48);
+            this.label1.Location = new System.Drawing.Point(421, 181);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 21);
             this.label1.TabIndex = 0;
@@ -58,7 +58,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 109);
+            this.label2.Location = new System.Drawing.Point(421, 291);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 21);
             this.label2.TabIndex = 1;
@@ -67,7 +67,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // txtMatainghe
             // 
             this.txtMatainghe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatainghe.Location = new System.Drawing.Point(177, 47);
+            this.txtMatainghe.Location = new System.Drawing.Point(523, 174);
             this.txtMatainghe.Name = "txtMatainghe";
             this.txtMatainghe.Size = new System.Drawing.Size(222, 28);
             this.txtMatainghe.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // txtTentainghe
             // 
             this.txtTentainghe.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTentainghe.Location = new System.Drawing.Point(177, 109);
+            this.txtTentainghe.Location = new System.Drawing.Point(528, 284);
             this.txtTentainghe.Name = "txtTentainghe";
             this.txtTentainghe.Size = new System.Drawing.Size(222, 28);
             this.txtTentainghe.TabIndex = 3;
@@ -84,18 +84,18 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // 
             this.DataGridView.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(439, 12);
+            this.DataGridView.Location = new System.Drawing.Point(21, 43);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersWidth = 51;
             this.DataGridView.RowTemplate.Height = 24;
-            this.DataGridView.Size = new System.Drawing.Size(420, 150);
+            this.DataGridView.Size = new System.Drawing.Size(377, 424);
             this.DataGridView.TabIndex = 4;
             this.DataGridView.Click += new System.EventHandler(this.DataGridView_Click);
             // 
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(24, 206);
+            this.btnThem.Location = new System.Drawing.Point(24, 520);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(81, 32);
             this.btnThem.TabIndex = 5;
@@ -106,7 +106,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(160, 206);
+            this.btnSua.Location = new System.Drawing.Point(160, 520);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(80, 32);
             this.btnSua.TabIndex = 6;
@@ -117,7 +117,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(299, 206);
+            this.btnXoa.Location = new System.Drawing.Point(290, 520);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(81, 32);
             this.btnXoa.TabIndex = 7;
@@ -128,7 +128,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(439, 206);
+            this.btnLuu.Location = new System.Drawing.Point(425, 520);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(80, 32);
             this.btnLuu.TabIndex = 8;
@@ -139,7 +139,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // btnBoqua
             // 
             this.btnBoqua.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBoqua.Location = new System.Drawing.Point(569, 206);
+            this.btnBoqua.Location = new System.Drawing.Point(557, 520);
             this.btnBoqua.Name = "btnBoqua";
             this.btnBoqua.Size = new System.Drawing.Size(92, 32);
             this.btnBoqua.TabIndex = 9;
@@ -150,7 +150,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // btnDong
             // 
             this.btnDong.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDong.Location = new System.Drawing.Point(725, 206);
+            this.btnDong.Location = new System.Drawing.Point(699, 520);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(92, 32);
             this.btnDong.TabIndex = 10;
@@ -162,7 +162,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 295);
+            this.ClientSize = new System.Drawing.Size(801, 571);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnBoqua);
             this.Controls.Add(this.btnLuu);
