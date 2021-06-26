@@ -42,90 +42,77 @@ namespace Quanly.Dữ_liệu
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnBoqua = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtMaphong
             // 
-            this.txtMaphong.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaphong.Location = new System.Drawing.Point(124, 39);
-            this.txtMaphong.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaphong.Location = new System.Drawing.Point(145, 46);
             this.txtMaphong.Name = "txtMaphong";
-            this.txtMaphong.Size = new System.Drawing.Size(79, 22);
+            this.txtMaphong.Size = new System.Drawing.Size(232, 22);
             this.txtMaphong.TabIndex = 0;
             // 
             // txtSomay
             // 
-            this.txtSomay.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSomay.Location = new System.Drawing.Point(124, 82);
-            this.txtSomay.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSomay.Location = new System.Drawing.Point(145, 99);
             this.txtSomay.Name = "txtSomay";
-            this.txtSomay.Size = new System.Drawing.Size(124, 22);
+            this.txtSomay.Size = new System.Drawing.Size(232, 22);
             this.txtSomay.TabIndex = 1;
             // 
             // txtDonGia
             // 
-            this.txtDonGia.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDonGia.Location = new System.Drawing.Point(342, 39);
-            this.txtDonGia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDonGia.Location = new System.Drawing.Point(145, 150);
             this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(136, 22);
+            this.txtDonGia.Size = new System.Drawing.Size(232, 22);
             this.txtDonGia.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label1.Location = new System.Drawing.Point(31, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 17);
+            this.label1.Size = new System.Drawing.Size(88, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "Mã phòng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label2.Location = new System.Drawing.Point(44, 84);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(29, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 17);
+            this.label2.Size = new System.Drawing.Size(71, 22);
             this.label2.TabIndex = 4;
             this.label2.Text = "Số Máy";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(267, 42);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(29, 150);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 17);
+            this.label3.Size = new System.Drawing.Size(73, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Đơn giá";
             // 
             // DataGridView
             // 
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(25, 164);
-            this.DataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.DataGridView.Location = new System.Drawing.Point(422, 22);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersWidth = 51;
             this.DataGridView.RowTemplate.Height = 24;
-            this.DataGridView.Size = new System.Drawing.Size(500, 122);
+            this.DataGridView.Size = new System.Drawing.Size(441, 173);
             this.DataGridView.TabIndex = 6;
             this.DataGridView.Click += new System.EventHandler(this.DataGridView_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(44, 305);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Location = new System.Drawing.Point(27, 223);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(66, 24);
+            this.btnThem.Size = new System.Drawing.Size(90, 41);
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm ";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -133,11 +120,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnSua
             // 
-            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(123, 305);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Location = new System.Drawing.Point(155, 223);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(66, 24);
+            this.btnSua.Size = new System.Drawing.Size(84, 41);
             this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -145,11 +131,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnXoa
             // 
-            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(205, 305);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(281, 223);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(66, 24);
+            this.btnXoa.Size = new System.Drawing.Size(83, 41);
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -157,11 +142,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnLuu
             // 
-            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(284, 305);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Location = new System.Drawing.Point(422, 223);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(66, 24);
+            this.btnLuu.Size = new System.Drawing.Size(73, 41);
             this.btnLuu.TabIndex = 10;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -169,11 +153,10 @@ namespace Quanly.Dữ_liệu
             // 
             // btnBoqua
             // 
-            this.btnBoqua.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBoqua.Location = new System.Drawing.Point(364, 305);
-            this.btnBoqua.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBoqua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBoqua.Location = new System.Drawing.Point(543, 223);
             this.btnBoqua.Name = "btnBoqua";
-            this.btnBoqua.Size = new System.Drawing.Size(66, 24);
+            this.btnBoqua.Size = new System.Drawing.Size(95, 41);
             this.btnBoqua.TabIndex = 11;
             this.btnBoqua.Text = "Bỏ qua";
             this.btnBoqua.UseVisualStyleBackColor = true;
@@ -181,38 +164,20 @@ namespace Quanly.Dữ_liệu
             // 
             // btnDong
             // 
-            this.btnDong.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDong.Location = new System.Drawing.Point(443, 305);
-            this.btnDong.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDong.Location = new System.Drawing.Point(699, 223);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(66, 24);
+            this.btnDong.Size = new System.Drawing.Size(94, 40);
             this.btnDong.TabIndex = 12;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtSomay);
-            this.groupBox1.Controls.Add(this.txtMaphong);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtDonGia);
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(25, 23);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(500, 123);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "THÔNG TIN";
-            // 
             // Room
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 353);
+            this.ClientSize = new System.Drawing.Size(907, 292);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnBoqua);
             this.Controls.Add(this.btnLuu);
@@ -220,15 +185,18 @@ namespace Quanly.Dữ_liệu
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.DataGridView);
-            this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtDonGia);
+            this.Controls.Add(this.txtSomay);
+            this.Controls.Add(this.txtMaphong);
             this.Name = "Room";
-            this.Text = "Dữ liệu phòng";
+            this.Text = "Room";
             this.Load += new System.EventHandler(this.Room_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -247,6 +215,5 @@ namespace Quanly.Dữ_liệu
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnBoqua;
         private System.Windows.Forms.Button btnDong;
-        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

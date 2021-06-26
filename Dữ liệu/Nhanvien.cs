@@ -256,5 +256,10 @@ namespace Quanly.Dữ_liệu
             btnLuu.Enabled = false;
             txtManhanvien.Enabled = false;
         }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
