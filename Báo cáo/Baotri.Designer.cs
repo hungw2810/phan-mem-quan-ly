@@ -90,7 +90,7 @@ namespace Quanly.Báo_cáo
             this.btnInbaocao.TabIndex = 4;
             this.btnInbaocao.Text = "Export";
             this.btnInbaocao.UseVisualStyleBackColor = true;
-
+            this.btnInbaocao.Click += new System.EventHandler(this.btnInbaocao_Click);
             // 
             // btnDong
             // 
