@@ -139,7 +139,7 @@ namespace Quanly.Báo_cáo
             // 
             // DataGridView
             // 
-            this.DataGridView.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DataGridView.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridView.Location = new System.Drawing.Point(251, 68);
             this.DataGridView.Margin = new System.Windows.Forms.Padding(2);
