@@ -33,8 +33,6 @@ namespace Quanly.Báo_cáo
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.txtTongTien = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.cbxThang = new System.Windows.Forms.ComboBox();
             this.cbxNam = new System.Windows.Forms.ComboBox();
             this.radZoneA = new System.Windows.Forms.RadioButton();
@@ -42,12 +40,14 @@ namespace Quanly.Báo_cáo
             this.radZoneC = new System.Windows.Forms.RadioButton();
             this.cboQuy = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnrefresh = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnTim
             // 
-            this.btnTim.Location = new System.Drawing.Point(258, 85);
+            this.btnTim.Location = new System.Drawing.Point(287, 106);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(82, 51);
             this.btnTim.TabIndex = 4;
@@ -76,28 +76,12 @@ namespace Quanly.Báo_cáo
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(25, 163);
+            this.dataGridView2.Location = new System.Drawing.Point(24, -4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(344, 223);
+            this.dataGridView2.Size = new System.Drawing.Size(344, 26);
             this.dataGridView2.TabIndex = 6;
-            // 
-            // txtTongTien
-            // 
-            this.txtTongTien.Location = new System.Drawing.Point(104, 114);
-            this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.Size = new System.Drawing.Size(129, 22);
-            this.txtTongTien.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 17);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Tổng Tiền:";
             // 
             // cbxThang
             // 
@@ -119,6 +103,7 @@ namespace Quanly.Báo_cáo
             this.cbxThang.Name = "cbxThang";
             this.cbxThang.Size = new System.Drawing.Size(52, 24);
             this.cbxThang.TabIndex = 9;
+            this.cbxThang.SelectedIndexChanged += new System.EventHandler(this.cbxThang_SelectedIndexChanged);
             // 
             // cbxNam
             // 
@@ -177,6 +162,7 @@ namespace Quanly.Báo_cáo
             this.cboQuy.Name = "cboQuy";
             this.cboQuy.Size = new System.Drawing.Size(58, 24);
             this.cboQuy.TabIndex = 11;
+            this.cboQuy.SelectedIndexChanged += new System.EventHandler(this.cboQuy_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -187,11 +173,32 @@ namespace Quanly.Báo_cáo
             this.label4.TabIndex = 12;
             this.label4.Text = "Quy";
             // 
+            // btnrefresh
+            // 
+            this.btnrefresh.Location = new System.Drawing.Point(25, 106);
+            this.btnrefresh.Name = "btnrefresh";
+            this.btnrefresh.Size = new System.Drawing.Size(74, 51);
+            this.btnrefresh.TabIndex = 13;
+            this.btnrefresh.Text = "Refresh";
+            this.btnrefresh.UseVisualStyleBackColor = true;
+            this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 178);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(124, 17);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Tổng Doanh Thu :";
+            // 
             // Tienthue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(391, 418);
+            this.ClientSize = new System.Drawing.Size(391, 221);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnrefresh);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cboQuy);
             this.Controls.Add(this.radZoneC);
@@ -199,8 +206,6 @@ namespace Quanly.Báo_cáo
             this.Controls.Add(this.radZoneA);
             this.Controls.Add(this.cbxNam);
             this.Controls.Add(this.cbxThang);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtTongTien);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -219,8 +224,6 @@ namespace Quanly.Báo_cáo
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.TextBox txtTongTien;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbxThang;
         private System.Windows.Forms.ComboBox cbxNam;
         private System.Windows.Forms.RadioButton radZoneA;
@@ -228,5 +231,7 @@ namespace Quanly.Báo_cáo
         private System.Windows.Forms.RadioButton radZoneC;
         private System.Windows.Forms.ComboBox cboQuy;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnrefresh;
+        private System.Windows.Forms.Label label3;
     }
 }

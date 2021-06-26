@@ -23,7 +23,7 @@ namespace Quanly.Báo_cáo
 
         private void Tienthue_Load(object sender, EventArgs e)
         {
-            dataGridView2.Visible = true;
+            dataGridView2.Visible = false;
         }
         private void Load_DataGridView()
         {
@@ -31,7 +31,17 @@ namespace Quanly.Báo_cáo
             dataGridView2.AllowUserToAddRows = false;
             dataGridView2.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
-
+        private void Reset_Values()
+        {
+            cbxThang.SelectedIndex = -1;
+            cbxNam.SelectedIndex = -1;
+            cboQuy.SelectedIndex = -1;
+            radZoneA.Checked = false;
+            radZoneB.Checked = false;
+            radZoneC.Checked = false;
+            cboQuy.Enabled = true;
+            cbxThang.Enabled = true;
+        }
        
 
         private void btnTim_Click(object sender, EventArgs e)
@@ -45,11 +55,13 @@ namespace Quanly.Báo_cáo
             }
 
 
-
+            
 
             if (cbxThang.Text != "")
             {
-                tt = tt + "AND MONTH(NgayThue) =" + cbxThang.Text;    
+                
+                tt = tt + "AND MONTH(NgayThue) =" + cbxThang.Text; 
+
             }
             if (cbxNam.Text != "")
                 tt = tt + "AND YEAR(NgayThue) =" + cbxNam.Text;
@@ -64,6 +76,7 @@ namespace Quanly.Báo_cáo
             {
                 tt = tt + "And id_phong='Zone C'";
             }
+            
             if (cboQuy.Text == "1")
             {
                 tt = tt + "AND MONTH(NgayThue) BETWEEN '1' AND '3'";
@@ -86,7 +99,26 @@ namespace Quanly.Báo_cáo
             dataGridView2.DataSource = TT;
            
             Load_DataGridView();
+            label3.Text = "Tổng Doanh Thu: "+ Functions.GetFieldValues(tt);
         }
+
+        private void btnrefresh_Click(object sender, EventArgs e)
+        {
+            Reset_Values();
+        }
+       
+private void cbxThang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboQuy.Enabled = false;
+
+        }
+
+        private void cboQuy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbxThang.Enabled = false;
+        }
+
     }
+
 }
     
