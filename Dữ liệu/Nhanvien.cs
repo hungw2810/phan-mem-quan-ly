@@ -40,13 +40,7 @@ namespace Quanly.Dữ_liệu
             DataGridView.Columns[4].HeaderText = "Giới tính";
             DataGridView.Columns[5].HeaderText = "Địa chỉ";
             DataGridView.Columns[6].HeaderText = "Điện thoại";
-            DataGridView.Columns[0].Width = 50;
-            DataGridView.Columns[1].Width = 100;
-            DataGridView.Columns[2].Width = 50;
-            DataGridView.Columns[3].Width = 50;
-            DataGridView.Columns[4].Width = 50;
-            DataGridView.Columns[5].Width = 100;
-            DataGridView.Columns[6].Width = 100;
+
             DataGridView.AllowUserToAddRows = false;
             DataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
@@ -255,6 +249,11 @@ namespace Quanly.Dữ_liệu
             btnSua.Enabled = true;
             btnLuu.Enabled = false;
             txtManhanvien.Enabled = false;
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

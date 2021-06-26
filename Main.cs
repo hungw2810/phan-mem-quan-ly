@@ -38,9 +38,9 @@ namespace Quanly
             f.Show();
         }
 
-        private void mnu_dm_ttBaotri_Click(object sender, EventArgs e)
+        private void mnu_dm_Baotri_Click(object sender, EventArgs e)
         {
-            Danh_mục.Thông_tin.Baotri f = new Danh_mục.Thông_tin.Baotri();
+            Danh_mục.Baotri f = new Danh_mục.Baotri();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
         }
@@ -138,7 +138,7 @@ namespace Quanly
 
         private void mnu_dl_pcChuot_Click(object sender, EventArgs e)
         {
-            Dữ_liệu.Phần_cứng.Chuot f = new Dữ_liệu.Phần_cứng.Chuot();
+            Dữ_liệu.Phần_cứng.CHUỘT f = new Dữ_liệu.Phần_cứng.CHUỘT();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
         }

@@ -35,9 +35,7 @@ namespace Quanly.Dữ_liệu
             DataGridView.Columns[0].HeaderText = "Mã phòng";
             DataGridView.Columns[1].HeaderText = "Số máy";
             DataGridView.Columns[2].HeaderText = "Đơn giá ";
-            DataGridView.Columns[0].Width = 200;
-            DataGridView.Columns[1].Width = 200;
-            DataGridView.Columns[2].Width = 200;
+
             // Không cho phép thêm mới dữ liệu trực tiếp trên lưới
             DataGridView.AllowUserToAddRows = false;
             // Không cho phép sửa dữ liệu trực tiếp trên lưới
@@ -198,6 +196,6 @@ namespace Quanly.Dữ_liệu
             this.Close();
         }
 
-
+       
     }
 }

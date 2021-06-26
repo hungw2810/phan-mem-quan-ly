@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Quanly.Dữ_liệu.Phần_cứng
 {
-    public partial class Chuot : Form
+    public partial class CHUỘT : Form
     {
         DataTable CT;
-        public Chuot()
+        public CHUỘT()
         {
             InitializeComponent();
         }

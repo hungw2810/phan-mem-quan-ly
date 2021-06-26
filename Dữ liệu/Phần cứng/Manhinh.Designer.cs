@@ -48,129 +48,140 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 67);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(38, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 17);
+            this.label1.Size = new System.Drawing.Size(108, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã màn hình";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 149);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(38, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 17);
+            this.label2.Size = new System.Drawing.Size(113, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên màn hình";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(110, 221);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(44, 149);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 17);
+            this.label3.Size = new System.Drawing.Size(71, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "Cỡ Màn";
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(25, 612);
+            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Location = new System.Drawing.Point(37, 205);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.Size = new System.Drawing.Size(78, 39);
             this.btnThem.TabIndex = 3;
-            this.btnThem.Text = "Thêm";
+            this.btnThem.Text = "Add";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(157, 612);
+            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Location = new System.Drawing.Point(169, 205);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.Size = new System.Drawing.Size(78, 39);
             this.btnSua.TabIndex = 4;
-            this.btnSua.Text = "Sửa";
+            this.btnSua.Text = "Change";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(304, 612);
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(301, 205);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.Size = new System.Drawing.Size(76, 39);
             this.btnXoa.TabIndex = 5;
-            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Text = "Delete";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(463, 612);
+            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Location = new System.Drawing.Point(435, 205);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.Size = new System.Drawing.Size(80, 39);
             this.btnLuu.TabIndex = 6;
-            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Text = "Save";
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnBoqua
             // 
-            this.btnBoqua.Location = new System.Drawing.Point(594, 612);
+            this.btnBoqua.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBoqua.Location = new System.Drawing.Point(572, 205);
             this.btnBoqua.Name = "btnBoqua";
-            this.btnBoqua.Size = new System.Drawing.Size(75, 23);
+            this.btnBoqua.Size = new System.Drawing.Size(89, 39);
             this.btnBoqua.TabIndex = 7;
-            this.btnBoqua.Text = "Bỏ Qua";
+            this.btnBoqua.Text = "Refresh";
             this.btnBoqua.UseVisualStyleBackColor = true;
             this.btnBoqua.Click += new System.EventHandler(this.btnBoqua_Click);
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(713, 612);
+            this.btnDong.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDong.Location = new System.Drawing.Point(720, 205);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(75, 23);
+            this.btnDong.Size = new System.Drawing.Size(80, 39);
             this.btnDong.TabIndex = 8;
-            this.btnDong.Text = "Đóng";
+            this.btnDong.Text = "Cancel";
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // DataGridView
             // 
-            this.DataGridView.BackgroundColor = System.Drawing.Color.LightSeaGreen;
+            this.DataGridView.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(85, 320);
+            this.DataGridView.Location = new System.Drawing.Point(418, 21);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersWidth = 51;
             this.DataGridView.RowTemplate.Height = 24;
-            this.DataGridView.Size = new System.Drawing.Size(658, 150);
+            this.DataGridView.Size = new System.Drawing.Size(382, 150);
             this.DataGridView.TabIndex = 9;
             this.DataGridView.Click += new System.EventHandler(this.DataGridView_Click);
             // 
             // txtMamanhinh
             // 
-            this.txtMamanhinh.Location = new System.Drawing.Point(236, 64);
+            this.txtMamanhinh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMamanhinh.Location = new System.Drawing.Point(157, 27);
             this.txtMamanhinh.Name = "txtMamanhinh";
-            this.txtMamanhinh.Size = new System.Drawing.Size(285, 22);
+            this.txtMamanhinh.Size = new System.Drawing.Size(197, 28);
             this.txtMamanhinh.TabIndex = 10;
             // 
             // txtTenmanhinh
             // 
-            this.txtTenmanhinh.Location = new System.Drawing.Point(236, 144);
+            this.txtTenmanhinh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenmanhinh.Location = new System.Drawing.Point(157, 90);
             this.txtTenmanhinh.Name = "txtTenmanhinh";
-            this.txtTenmanhinh.Size = new System.Drawing.Size(285, 22);
+            this.txtTenmanhinh.Size = new System.Drawing.Size(197, 28);
             this.txtTenmanhinh.TabIndex = 11;
             // 
             // txtComan
             // 
-            this.txtComan.Location = new System.Drawing.Point(236, 221);
+            this.txtComan.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComan.Location = new System.Drawing.Point(157, 149);
             this.txtComan.Name = "txtComan";
-            this.txtComan.Size = new System.Drawing.Size(285, 22);
+            this.txtComan.Size = new System.Drawing.Size(197, 28);
             this.txtComan.TabIndex = 12;
             // 
             // Manhinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Quanly.Properties.Resources.GRN;
-            this.ClientSize = new System.Drawing.Size(800, 681);
+            this.ClientSize = new System.Drawing.Size(860, 278);
             this.Controls.Add(this.txtComan);
             this.Controls.Add(this.txtTenmanhinh);
             this.Controls.Add(this.txtMamanhinh);
@@ -185,7 +196,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Manhinh";
-            this.Text = "Manhinh";
+            this.Text = "MÀN HÌNH";
             this.Load += new System.EventHandler(this.Manhinh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.ResumeLayout(false);

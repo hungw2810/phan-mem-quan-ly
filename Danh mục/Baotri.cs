@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Quanly.Danh_mục.Thông_tin
+namespace Quanly.Danh_mục
 {
     public partial class Baotri : Form
     {
