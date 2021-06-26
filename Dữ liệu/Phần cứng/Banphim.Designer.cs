@@ -45,14 +45,14 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             // 
             // txtMabanphim
             // 
-            this.txtMabanphim.Location = new System.Drawing.Point(185, 61);
+            this.txtMabanphim.Location = new System.Drawing.Point(191, 61);
             this.txtMabanphim.Name = "txtMabanphim";
             this.txtMabanphim.Size = new System.Drawing.Size(214, 22);
             this.txtMabanphim.TabIndex = 0;
             // 
             // txtTenbanphim
             // 
-            this.txtTenbanphim.Location = new System.Drawing.Point(185, 123);
+            this.txtTenbanphim.Location = new System.Drawing.Point(191, 123);
             this.txtTenbanphim.Name = "txtTenbanphim";
             this.txtTenbanphim.Size = new System.Drawing.Size(214, 22);
             this.txtTenbanphim.TabIndex = 1;

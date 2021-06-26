@@ -29,6 +29,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tainghe));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtMatainghe = new System.Windows.Forms.TextBox();
@@ -171,6 +172,7 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             this.Controls.Add(this.txtMatainghe);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tainghe";
             this.Text = "TAI NGHE";
             this.Load += new System.EventHandler(this.Tainghe_Load);
