@@ -59,17 +59,7 @@ namespace Quanly.Dữ_liệu
             DataGridView.Columns[8].HeaderText = "Mã bàn phím";
             DataGridView.Columns[9].HeaderText = "Tình trạng";
             DataGridView.Columns[10].HeaderText = "Ghi chú";
-            DataGridView.Columns[0].Width = 100;
-            DataGridView.Columns[1].Width = 100;
-            DataGridView.Columns[2].Width = 100;
-            DataGridView.Columns[3].Width = 100;
-            DataGridView.Columns[4].Width = 100;
-            DataGridView.Columns[5].Width = 100;
-            DataGridView.Columns[6].Width = 100;
-            DataGridView.Columns[7].Width = 100;
-            DataGridView.Columns[8].Width = 100;
-            DataGridView.Columns[9].Width = 100;
-            DataGridView.Columns[10].Width = 100;
+
             DataGridView.AllowUserToAddRows = false;
             DataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
         }

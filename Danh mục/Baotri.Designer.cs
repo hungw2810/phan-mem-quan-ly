@@ -46,9 +46,9 @@ namespace Quanly.Danh_mục
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(21, 24);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(460, 336);
+            this.dataGridView1.Size = new System.Drawing.Size(431, 324);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox1
