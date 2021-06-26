@@ -46,7 +46,7 @@ namespace Quanly.Danh_mục
             // 
             // btnThue
             // 
-            this.btnThue.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThue.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnThue.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnThue.ImageKey = "(none)";
@@ -54,12 +54,13 @@ namespace Quanly.Danh_mục
             this.btnThue.Name = "btnThue";
             this.btnThue.Size = new System.Drawing.Size(87, 25);
             this.btnThue.TabIndex = 0;
-            this.btnThue.Text = "Thuê";
+            this.btnThue.Text = "OK";
             this.btnThue.UseVisualStyleBackColor = true;
             this.btnThue.Click += new System.EventHandler(this.btnThue_Click);
             // 
             // dtgv1
             // 
+            this.dtgv1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dtgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv1.Location = new System.Drawing.Point(12, 64);
             this.dtgv1.Name = "dtgv1";
@@ -69,7 +70,7 @@ namespace Quanly.Danh_mục
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.ForeColor = System.Drawing.Color.Black;
             this.btnRefresh.Location = new System.Drawing.Point(691, 407);
             this.btnRefresh.Name = "btnRefresh";
@@ -91,13 +92,12 @@ namespace Quanly.Danh_mục
             // 
             // btnTim
             // 
-            this.btnTim.BackColor = System.Drawing.Color.White;
-            this.btnTim.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTim.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.Location = new System.Drawing.Point(283, 20);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(74, 27);
             this.btnTim.TabIndex = 5;
-            this.btnTim.Text = "Tìm";
+            this.btnTim.Text = "Find";
             this.btnTim.UseVisualStyleBackColor = false;
             this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
@@ -131,13 +131,13 @@ namespace Quanly.Danh_mục
             // 
             // btnDong
             // 
-            this.btnDong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDong.ForeColor = System.Drawing.Color.Black;
+            this.btnDong.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDong.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnDong.Location = new System.Drawing.Point(797, 407);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(87, 25);
             this.btnDong.TabIndex = 9;
-            this.btnDong.Text = "Đóng";
+            this.btnDong.Text = "Cancel";
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 

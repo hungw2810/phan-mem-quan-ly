@@ -76,6 +76,11 @@ namespace Quanly.Danh_mục
 
         private void dtgv_Click(object sender, EventArgs e)
         {
+            if (dtgv.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có máy đang thuê", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             txtMathue.Text = dtgv.CurrentRow.Cells["id_stt"].Value.ToString();
             txtTenkhach.Text = dtgv.CurrentRow.Cells["TenKhach"].Value.ToString();
             txtMamay.Text = dtgv.CurrentRow.Cells["id_may"].Value.ToString();

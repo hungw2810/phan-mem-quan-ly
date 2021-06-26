@@ -171,6 +171,7 @@ namespace Quanly.Báo_cáo
             this.cboThang.Name = "cboThang";
             this.cboThang.Size = new System.Drawing.Size(121, 23);
             this.cboThang.TabIndex = 22;
+            this.cboThang.SelectedIndexChanged += new System.EventHandler(this.cboThang_SelectedIndexChanged);
             // 
             // cboQuy
             // 
@@ -184,6 +185,7 @@ namespace Quanly.Báo_cáo
             this.cboQuy.Name = "cboQuy";
             this.cboQuy.Size = new System.Drawing.Size(121, 23);
             this.cboQuy.TabIndex = 23;
+            this.cboQuy.SelectedIndexChanged += new System.EventHandler(this.cboQuy_SelectedIndexChanged);
             // 
             // Baotri
             // 

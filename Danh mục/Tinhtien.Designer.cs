@@ -33,8 +33,8 @@ namespace Quanly.Danh_mục
             this.dtgv = new System.Windows.Forms.DataGridView();
             this.btnThanhtoan = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txtMathue = new System.Windows.Forms.TextBox();
             this.txtTenkhach = new System.Windows.Forms.TextBox();
             this.btnRefresh = new System.Windows.Forms.Button();
@@ -48,6 +48,7 @@ namespace Quanly.Danh_mục
             // 
             // dtgv
             // 
+            this.dtgv.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dtgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv.Location = new System.Drawing.Point(20, 24);
             this.dtgv.Name = "dtgv";
@@ -57,12 +58,12 @@ namespace Quanly.Danh_mục
             // 
             // btnThanhtoan
             // 
-            this.btnThanhtoan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhtoan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhtoan.Location = new System.Drawing.Point(32, 337);
             this.btnThanhtoan.Name = "btnThanhtoan";
             this.btnThanhtoan.Size = new System.Drawing.Size(84, 23);
             this.btnThanhtoan.TabIndex = 1;
-            this.btnThanhtoan.Text = "Thanh toán";
+            this.btnThanhtoan.Text = "OK";
             this.btnThanhtoan.UseVisualStyleBackColor = true;
             this.btnThanhtoan.Click += new System.EventHandler(this.btnThanhtoan_Click);
             // 
@@ -79,10 +80,6 @@ namespace Quanly.Danh_mục
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DANH SÁCH MÁY THUÊ";
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // lblTime
             // 
             this.lblTime.AutoSize = true;
@@ -91,23 +88,29 @@ namespace Quanly.Danh_mục
             this.lblTime.Size = new System.Drawing.Size(0, 17);
             this.lblTime.TabIndex = 1;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // txtMathue
             // 
+            this.txtMathue.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMathue.Location = new System.Drawing.Point(47, 298);
             this.txtMathue.Name = "txtMathue";
-            this.txtMathue.Size = new System.Drawing.Size(132, 22);
+            this.txtMathue.Size = new System.Drawing.Size(132, 25);
             this.txtMathue.TabIndex = 8;
             // 
             // txtTenkhach
             // 
+            this.txtTenkhach.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenkhach.Location = new System.Drawing.Point(239, 298);
             this.txtTenkhach.Name = "txtTenkhach";
-            this.txtTenkhach.Size = new System.Drawing.Size(132, 22);
+            this.txtTenkhach.Size = new System.Drawing.Size(132, 25);
             this.txtTenkhach.TabIndex = 9;
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Location = new System.Drawing.Point(135, 337);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(84, 23);
@@ -118,20 +121,21 @@ namespace Quanly.Danh_mục
             // 
             // btnDong
             // 
-            this.btnDong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDong.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDong.Location = new System.Drawing.Point(239, 337);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(84, 23);
             this.btnDong.TabIndex = 11;
-            this.btnDong.Text = "Đóng";
+            this.btnDong.Text = "Cancel";
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // txtMamay
             // 
+            this.txtMamay.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMamay.Location = new System.Drawing.Point(435, 298);
             this.txtMamay.Name = "txtMamay";
-            this.txtMamay.Size = new System.Drawing.Size(132, 22);
+            this.txtMamay.Size = new System.Drawing.Size(132, 25);
             this.txtMamay.TabIndex = 12;
             // 
             // lblTongtien
@@ -147,9 +151,10 @@ namespace Quanly.Danh_mục
             // 
             // txtTongtien
             // 
-            this.txtTongtien.Location = new System.Drawing.Point(448, 338);
+            this.txtTongtien.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongtien.Location = new System.Drawing.Point(448, 336);
             this.txtTongtien.Name = "txtTongtien";
-            this.txtTongtien.Size = new System.Drawing.Size(132, 22);
+            this.txtTongtien.Size = new System.Drawing.Size(132, 25);
             this.txtTongtien.TabIndex = 3;
             // 
             // Tinhtien

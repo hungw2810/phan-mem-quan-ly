@@ -45,55 +45,48 @@ namespace Quanly.Báo_cáo
         private void btnBaocao_Click(object sender, EventArgs e)
         {
             string sql;
-            if ((cboThang.Text == "") && (cboQuy.Text == "") && (txtNam.Text == ""))
+            if ((cboThang.Text != "") && (txtNam.Text == ""))
             {
-                MessageBox.Show("Hãy nhập một điều kiện tìm kiếm!!!", "Yêu cầu ...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Nhập năm!!!", "Yêu cầu ...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if ((cboThang.Text != "") && (cboQuy.Text != "") || (cboThang.Text != "") &&(txtNam.Text != "")|| (cboQuy.Text != "") && (txtNam.Text != "")|| (cboThang.Text != "") && (cboQuy.Text != "") && (txtNam.Text != ""))
+            if ((cboQuy.Text != "") && (txtNam.Text == ""))
             {
-                MessageBox.Show("Chỉ chọn một kiện tìm kiếm!!!", "Yêu cầu ...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                Reset_Values();
+                MessageBox.Show("Nhập năm!!!", "Yêu cầu ...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             sql = "SELECT c.id_phong, sum(a.tongchiphi) AS Tong FROM BaoTri a JOIN CTBT b ON a.id_baotri=b.id_baotri JOIN MayTinh c ON c.id_may= b.id_may WHERE 1=1";
-            if (cboThang.SelectedIndex != -1)
+            if ((txtNam.Text != ""))
             {
-                cboQuy.Enabled = false;
-                txtNam.Enabled = false;
-                sql = sql + " AND (SELECT MONTH(a.day_start) AS CHAR) ='" + cboThang.Text + "' GROUP BY c.id_phong";
+                sql = sql + "AND (SELECT YEAR(a.day_start) AS CHAR)='" + txtNam.Text.Trim() +"'";
             }
-            if (cboQuy.SelectedIndex != -1)
+            if ((cboThang.Text!=""))
             {
-                cboThang.Enabled = false;
-                txtNam.Enabled = false;
+                sql = sql + " AND (SELECT MONTH(a.day_start) AS CHAR) ='" + cboThang.Text + "'";
+            }
+            if ((cboQuy.Text != ""))
+            {
                 if (cboQuy.Text == "1")
                 {
-                    sql = sql + "AND (SELECT MONTH(a.day_start) AS CHAR) BETWEEN '1' AND '3' GROUP BY c.id_Phong";
+                    sql = sql + " AND (SELECT MONTH(a.day_start) AS CHAR) BETWEEN '1' AND '3'";
                 }
                 if (cboQuy.Text == "2")
                 {
-                    sql = sql + "AND (SELECT MONTH(a.day_start) AS CHAR) BETWEEN '4' AND '6' GROUP BY c.id_Phong";
+                    sql = sql + " AND (SELECT MONTH(a.day_start) AS CHAR) BETWEEN '4' AND '6'";
                 }
                 if (cboQuy.Text == "3")
                 {
-                    sql = sql + "AND (SELECT MONTH(a.day_start) AS CHAR) BETWEEN '7' AND '9' GROUP BY c.id_Phong";
+                    sql = sql + " AND (SELECT MONTH(a.day_start) AS CHAR) BETWEEN '7' AND '9'";
                 }
                 if (cboQuy.Text == "4")
                 {
-                    sql = sql + "AND (SELECT MONTH(a.day_start) AS CHAR) BETWEEN '9' AND '12' GROUP BY c.id_Phong";
+                    sql = sql + " AND (SELECT MONTH(a.day_start) AS CHAR) BETWEEN '9' AND '12'";
                 }
             }
-            if (txtNam.Text.Length != 0)
-            {
-                cboThang.Enabled = false;
-                cboQuy.Enabled = false;
-                sql = sql + "AND (SELECT YEAR(a.day_start) AS CHAR)='" + txtNam.Text.Trim() + "' GROUP BY c.id_Phong";
-            }
-            tbla = Functions.GetDataToTable(sql);
+            tbla = Functions.GetDataToTable(sql+ "GROUP BY c.id_phong");
             if (tbla.Rows.Count == 0)
             {
-                MessageBox.Show("Không có bản ghi thỏa mãn điều kiện!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Không có dữ liệu bảo trì!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Reset_Values();
                 btnInbaocao.Enabled = false;
                 btnRefresh.Enabled = false;
@@ -101,7 +94,6 @@ namespace Quanly.Báo_cáo
             }
             else
             {
-                MessageBox.Show("Có " + tbla.Rows.Count + " bản ghi thỏa mãn điều kiện!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 DataGridView.DataSource = tbla;
                 Load_DataGridView();
                 cboQuy.Enabled = false;
@@ -126,6 +118,16 @@ namespace Quanly.Báo_cáo
         private void btnDong_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cboThang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboQuy.Enabled = false;
+        }
+
+        private void cboQuy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboThang.Enabled = false;
         }
     }
 }
