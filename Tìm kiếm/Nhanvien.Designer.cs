@@ -39,116 +39,110 @@ namespace Quanly.Tìm_kiếm
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // cboMaca
             // 
+            this.cboMaca.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMaca.FormattingEnabled = true;
-            this.cboMaca.Location = new System.Drawing.Point(222, 128);
+            this.cboMaca.Location = new System.Drawing.Point(159, 57);
             this.cboMaca.Name = "cboMaca";
-            this.cboMaca.Size = new System.Drawing.Size(266, 24);
+            this.cboMaca.Size = new System.Drawing.Size(266, 28);
             this.cboMaca.TabIndex = 28;
             // 
             // txtTennhanvien
             // 
-            this.txtTennhanvien.Location = new System.Drawing.Point(222, 89);
+            this.txtTennhanvien.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTennhanvien.Location = new System.Drawing.Point(159, 18);
             this.txtTennhanvien.Name = "txtTennhanvien";
-            this.txtTennhanvien.Size = new System.Drawing.Size(266, 22);
+            this.txtTennhanvien.Size = new System.Drawing.Size(266, 28);
             this.txtTennhanvien.TabIndex = 26;
             // 
             // txtGioitinh
             // 
-            this.txtGioitinh.Location = new System.Drawing.Point(222, 177);
+            this.txtGioitinh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGioitinh.Location = new System.Drawing.Point(159, 100);
             this.txtGioitinh.Name = "txtGioitinh";
-            this.txtGioitinh.Size = new System.Drawing.Size(266, 22);
+            this.txtGioitinh.Size = new System.Drawing.Size(266, 28);
             this.txtGioitinh.TabIndex = 27;
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(593, 452);
+            this.btnDong.Location = new System.Drawing.Point(566, 100);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(121, 43);
+            this.btnDong.Size = new System.Drawing.Size(121, 44);
             this.btnDong.TabIndex = 25;
-            this.btnDong.Text = "Đóng";
+            this.btnDong.Text = "Cancel";
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnTimlai
             // 
-            this.btnTimlai.Location = new System.Drawing.Point(327, 452);
+            this.btnTimlai.Location = new System.Drawing.Point(566, 52);
             this.btnTimlai.Name = "btnTimlai";
-            this.btnTimlai.Size = new System.Drawing.Size(121, 43);
+            this.btnTimlai.Size = new System.Drawing.Size(121, 38);
             this.btnTimlai.TabIndex = 24;
-            this.btnTimlai.Text = "Tìm Lại";
+            this.btnTimlai.Text = "Refresh";
             this.btnTimlai.UseVisualStyleBackColor = true;
             this.btnTimlai.Click += new System.EventHandler(this.btnTimlai_Click);
             // 
             // btnTimkiem
             // 
-            this.btnTimkiem.Location = new System.Drawing.Point(83, 452);
+            this.btnTimkiem.Location = new System.Drawing.Point(566, 7);
             this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(121, 43);
+            this.btnTimkiem.Size = new System.Drawing.Size(121, 39);
             this.btnTimkiem.TabIndex = 23;
-            this.btnTimkiem.Text = "Tìm Kiếm";
+            this.btnTimkiem.Text = "Search";
             this.btnTimkiem.UseVisualStyleBackColor = true;
             this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // DataGridView
             // 
+            this.DataGridView.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(21, 230);
+            this.DataGridView.Location = new System.Drawing.Point(12, 150);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersWidth = 51;
             this.DataGridView.RowTemplate.Height = 24;
-            this.DataGridView.Size = new System.Drawing.Size(766, 196);
+            this.DataGridView.Size = new System.Drawing.Size(791, 196);
             this.DataGridView.TabIndex = 22;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(98, 182);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(35, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 17);
+            this.label3.Size = new System.Drawing.Size(80, 21);
             this.label3.TabIndex = 21;
             this.label3.Text = "Giới tính:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(98, 135);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(35, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 17);
+            this.label2.Size = new System.Drawing.Size(66, 21);
             this.label2.TabIndex = 20;
             this.label2.Text = "Ca làm:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(98, 94);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 17);
+            this.label1.Size = new System.Drawing.Size(118, 21);
             this.label1.TabIndex = 19;
             this.label1.Text = "Tên nhân viên:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(193, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(387, 44);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Tìm Kiếm Nhân Viên";
             // 
             // Nhanvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 515);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(815, 362);
             this.Controls.Add(this.cboMaca);
             this.Controls.Add(this.txtTennhanvien);
             this.Controls.Add(this.txtGioitinh);
@@ -160,7 +154,7 @@ namespace Quanly.Tìm_kiếm
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Nhanvien";
-            this.Text = "Nhanvien";
+            this.Text = "Tìm Kiếm Nhân Viên";
             this.Load += new System.EventHandler(this.Nhanvien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -180,6 +174,5 @@ namespace Quanly.Tìm_kiếm
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
     }
 }
