@@ -29,7 +29,6 @@ namespace Quanly.Báo_cáo
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnTim = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,23 +37,17 @@ namespace Quanly.Báo_cáo
             this.label3 = new System.Windows.Forms.Label();
             this.cbxThang = new System.Windows.Forms.ComboBox();
             this.cbxNam = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.radZoneA = new System.Windows.Forms.RadioButton();
+            this.radZoneB = new System.Windows.Forms.RadioButton();
+            this.radZoneC = new System.Windows.Forms.RadioButton();
+            this.cboQuy = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 159);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(986, 334);
-            this.dataGridView1.TabIndex = 2;
-            // 
             // btnTim
             // 
-            this.btnTim.Location = new System.Drawing.Point(648, 31);
+            this.btnTim.Location = new System.Drawing.Point(258, 85);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(82, 51);
             this.btnTim.TabIndex = 4;
@@ -74,7 +67,7 @@ namespace Quanly.Báo_cáo
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(150, 31);
+            this.label2.Location = new System.Drawing.Point(134, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 5;
@@ -83,11 +76,11 @@ namespace Quanly.Báo_cáo
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(761, 12);
+            this.dataGridView2.Location = new System.Drawing.Point(25, 163);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(237, 95);
+            this.dataGridView2.Size = new System.Drawing.Size(344, 223);
             this.dataGridView2.TabIndex = 6;
             // 
             // txtTongTien
@@ -126,7 +119,6 @@ namespace Quanly.Báo_cáo
             this.cbxThang.Name = "cbxThang";
             this.cbxThang.Size = new System.Drawing.Size(52, 24);
             this.cbxThang.TabIndex = 9;
-            this.cbxThang.SelectedIndexChanged += new System.EventHandler(this.cbxThang_SelectedIndexChanged);
             // 
             // cbxNam
             // 
@@ -135,17 +127,76 @@ namespace Quanly.Báo_cáo
             "2020",
             "2021",
             "2022"});
-            this.cbxNam.Location = new System.Drawing.Point(193, 28);
+            this.cbxNam.Location = new System.Drawing.Point(177, 28);
             this.cbxNam.Name = "cbxNam";
             this.cbxNam.Size = new System.Drawing.Size(76, 24);
             this.cbxNam.TabIndex = 9;
-            this.cbxNam.SelectedIndexChanged += new System.EventHandler(this.cbxThang_SelectedIndexChanged);
+            // 
+            // radZoneA
+            // 
+            this.radZoneA.AutoSize = true;
+            this.radZoneA.Location = new System.Drawing.Point(24, 72);
+            this.radZoneA.Name = "radZoneA";
+            this.radZoneA.Size = new System.Drawing.Size(75, 21);
+            this.radZoneA.TabIndex = 10;
+            this.radZoneA.TabStop = true;
+            this.radZoneA.Text = "Zone A";
+            this.radZoneA.UseVisualStyleBackColor = true;
+            // 
+            // radZoneB
+            // 
+            this.radZoneB.AutoSize = true;
+            this.radZoneB.Location = new System.Drawing.Point(104, 72);
+            this.radZoneB.Name = "radZoneB";
+            this.radZoneB.Size = new System.Drawing.Size(75, 21);
+            this.radZoneB.TabIndex = 10;
+            this.radZoneB.TabStop = true;
+            this.radZoneB.Text = "Zone B";
+            this.radZoneB.UseVisualStyleBackColor = true;
+            // 
+            // radZoneC
+            // 
+            this.radZoneC.AutoSize = true;
+            this.radZoneC.Location = new System.Drawing.Point(181, 72);
+            this.radZoneC.Name = "radZoneC";
+            this.radZoneC.Size = new System.Drawing.Size(75, 21);
+            this.radZoneC.TabIndex = 10;
+            this.radZoneC.TabStop = true;
+            this.radZoneC.Text = "Zone C";
+            this.radZoneC.UseVisualStyleBackColor = true;
+            // 
+            // cboQuy
+            // 
+            this.cboQuy.FormattingEnabled = true;
+            this.cboQuy.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.cboQuy.Location = new System.Drawing.Point(311, 28);
+            this.cboQuy.Name = "cboQuy";
+            this.cboQuy.Size = new System.Drawing.Size(58, 24);
+            this.cboQuy.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(271, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 17);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Quy";
             // 
             // Tienthue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 505);
+            this.ClientSize = new System.Drawing.Size(391, 418);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cboQuy);
+            this.Controls.Add(this.radZoneC);
+            this.Controls.Add(this.radZoneB);
+            this.Controls.Add(this.radZoneA);
             this.Controls.Add(this.cbxNam);
             this.Controls.Add(this.cbxThang);
             this.Controls.Add(this.label3);
@@ -154,11 +205,9 @@ namespace Quanly.Báo_cáo
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTim);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "Tienthue";
             this.Text = "Tienthue";
             this.Load += new System.EventHandler(this.Tienthue_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -166,7 +215,6 @@ namespace Quanly.Báo_cáo
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -175,5 +223,10 @@ namespace Quanly.Báo_cáo
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbxThang;
         private System.Windows.Forms.ComboBox cbxNam;
+        private System.Windows.Forms.RadioButton radZoneA;
+        private System.Windows.Forms.RadioButton radZoneB;
+        private System.Windows.Forms.RadioButton radZoneC;
+        private System.Windows.Forms.ComboBox cboQuy;
+        private System.Windows.Forms.Label label4;
     }
 }
