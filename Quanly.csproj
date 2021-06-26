@@ -58,6 +58,12 @@
     <Compile Include="Báo cáo\Tienthue.Designer.cs">
       <DependentUpon>Tienthue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Danh mục\Baotri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danh mục\Baotri.Designer.cs">
+      <DependentUpon>Baotri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Danh mục\Tinhtien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,12 +105,6 @@
     </Compile>
     <Compile Include="Danh mục\Thuemay.Designer.cs">
       <DependentUpon>Thuemay.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Danh mục\Baotri.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Danh mục\Baotri.Designer.cs">
-      <DependentUpon>Baotri.cs</DependentUpon>
     </Compile>
     <Compile Include="Danh mục\Thông tin\Phong.cs">
       <SubType>Form</SubType>
@@ -187,11 +187,11 @@
     <EmbeddedResource Include="Báo cáo\Tienthue.resx">
       <DependentUpon>Tienthue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Danh mục\Thuemay.resx">
-      <DependentUpon>Thuemay.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Danh mục\Baotri.resx">
       <DependentUpon>Baotri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danh mục\Thuemay.resx">
+      <DependentUpon>Thuemay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Danh mục\Tinhtien.resx">
       <DependentUpon>Tinhtien.cs</DependentUpon>

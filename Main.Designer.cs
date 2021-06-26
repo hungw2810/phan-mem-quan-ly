@@ -33,6 +33,7 @@ namespace Quanly
             this.danhSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_dm_thuemay = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuTinhtien = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_dm_Baotri = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_dm_ttPhong = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +58,6 @@ namespace Quanly
             this.mnu_dl_btNhabt = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_dl_btGiaiphap = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_dl_btNguyennhan = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_dm_Baotri = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,6 +102,13 @@ namespace Quanly
             this.mnuTinhtien.Text = "Tính tiền";
             this.mnuTinhtien.Click += new System.EventHandler(this.mnuTinhtien_Click);
             // 
+            // mnu_dm_Baotri
+            // 
+            this.mnu_dm_Baotri.Name = "mnu_dm_Baotri";
+            this.mnu_dm_Baotri.Size = new System.Drawing.Size(180, 24);
+            this.mnu_dm_Baotri.Text = "Bảo trì";
+            this.mnu_dm_Baotri.Click += new System.EventHandler(this.mnu_dm_Baotri_Click);
+            // 
             // thôngTinToolStripMenuItem
             // 
             this.thôngTinToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -115,7 +122,7 @@ namespace Quanly
             // 
             this.mnu_dm_ttPhong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnu_dm_ttPhong.Name = "mnu_dm_ttPhong";
-            this.mnu_dm_ttPhong.Size = new System.Drawing.Size(180, 24);
+            this.mnu_dm_ttPhong.Size = new System.Drawing.Size(116, 24);
             this.mnu_dm_ttPhong.Text = "Phòng";
             this.mnu_dm_ttPhong.Click += new System.EventHandler(this.mnu_dm_ttPhong_Click);
             // 
@@ -313,12 +320,6 @@ namespace Quanly
             this.mnu_dl_btNguyennhan.Size = new System.Drawing.Size(157, 24);
             this.mnu_dl_btNguyennhan.Text = "Nguyên nhân";
             this.mnu_dl_btNguyennhan.Click += new System.EventHandler(this.mnu_dl_btNguyennhan_Click);
-            // 
-            // mnu_dm_Baotri
-            // 
-            this.mnu_dm_Baotri.Name = "mnu_dm_Baotri";
-            this.mnu_dm_Baotri.Size = new System.Drawing.Size(180, 24);
-            this.mnu_dm_Baotri.Text = "Bảo trì";
             // 
             // Main
             // 

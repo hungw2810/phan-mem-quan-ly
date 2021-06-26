@@ -38,9 +38,9 @@ namespace Quanly
             f.Show();
         }
 
-        private void mnu_dm_ttBaotri_Click(object sender, EventArgs e)
+        private void mnu_dm_Baotri_Click(object sender, EventArgs e)
         {
-            Danh_mục. f = new Danh_mục.Thông_tin.Baotri();
+            Danh_mục.Baotri f = new Danh_mục.Baotri();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
         }
