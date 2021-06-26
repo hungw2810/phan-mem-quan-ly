@@ -100,10 +100,10 @@
     <Compile Include="Danh mục\Thuemay.Designer.cs">
       <DependentUpon>Thuemay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Danh mục\Thông tin\Baotri.cs">
+    <Compile Include="Danh mục\Baotri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Danh mục\Thông tin\Baotri.Designer.cs">
+    <Compile Include="Danh mục\Baotri.Designer.cs">
       <DependentUpon>Baotri.cs</DependentUpon>
     </Compile>
     <Compile Include="Danh mục\Thông tin\Phong.cs">
@@ -190,7 +190,7 @@
     <EmbeddedResource Include="Danh mục\Thuemay.resx">
       <DependentUpon>Thuemay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Danh mục\Thông tin\Baotri.resx">
+    <EmbeddedResource Include="Danh mục\Baotri.resx">
       <DependentUpon>Baotri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Danh mục\Tinhtien.resx">

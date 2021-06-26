@@ -40,7 +40,7 @@ namespace Quanly
 
         private void mnu_dm_ttBaotri_Click(object sender, EventArgs e)
         {
-            Danh_mục.Thông_tin.Baotri f = new Danh_mục.Thông_tin.Baotri();
+            Danh_mục. f = new Danh_mục.Thông_tin.Baotri();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
         }
