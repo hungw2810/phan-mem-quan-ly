@@ -34,9 +34,6 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             DataGridView.Columns[0].HeaderText = "Mã màn hình ";
             DataGridView.Columns[1].HeaderText = "Tên màn hình";
             DataGridView.Columns[2].HeaderText = "Cỡ màn hình";
-            DataGridView.Columns[0].Width = 200;
-            DataGridView.Columns[1].Width = 200;
-            DataGridView.Columns[2].Width = 200;
             // Không cho phép thêm mới dữ liệu trực tiếp trên lưới
             DataGridView.AllowUserToAddRows = false;
             // Không cho phép sửa dữ liệu trực tiếp trên lưới

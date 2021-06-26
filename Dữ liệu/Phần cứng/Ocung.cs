@@ -111,7 +111,6 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             txtMaocung.Enabled = false;
 
         }
-
         private void btnThem_Click(object sender, EventArgs e)
         {
             btnSua.Enabled = false;
