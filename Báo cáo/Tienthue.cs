@@ -13,7 +13,7 @@ namespace Quanly.Báo_cáo
 {
     public partial class Tienthue : Form
     {
-        DataTable TT,XX;
+        DataTable TT;
         public Tienthue()
         {
             InitializeComponent();
@@ -27,48 +27,98 @@ namespace Quanly.Báo_cáo
         }
         private void Load_DataGridView()
         {
-
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
+            
+            dataGridView2.AllowUserToAddRows = false;
+            dataGridView2.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Reset_Values()
         {
-
+            cbxThang.SelectedIndex = -1;
+            cbxNam.SelectedIndex = -1;
+            cboQuy.SelectedIndex = -1;
+            radZoneA.Checked = false;
+            radZoneB.Checked = false;
+            radZoneC.Checked = false;
+            cboQuy.Enabled = true;
+            cbxThang.Enabled = true;
         }
-
-        private void cbxThang_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnTim_Click(object sender, EventArgs e)
         {
             string tt;
-            tt = "SELECT SUM(TongTien)  FROM ThueMay";
-            XX = Functions.GetDataToTable(tt);
+            tt = "SELECT SUM(TongTien) as 'Doanh Thu' FROM ThueMay Where 1=1";
+            if (cbxNam.Text == "" && cbxThang.Text == "" && radZoneA.Checked == false && radZoneB.Checked == false && radZoneC.Checked == false)
+            {
+                MessageBox.Show("Hãy nhập một điều kiện tìm kiếm!!!", "Yêu cầu ...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
             
-            dataGridView2.DataSource = XX;
-            if (cbxThang.Text == "")
-            {
-                MessageBox.Show("Bạn phải nhập tháng", "Thông Báo", MessageBoxButtons.OK);
-            }
-            if (cbxNam.Text == "")
-            {
-                MessageBox.Show("Bạn phải nhập năm", "Thông Báo", MessageBoxButtons.OK);
-            }
-            string sql;
-            sql = "Select * from ThueMay Where 1=1"; dataGridView1.DataSource = TT; 
-            TT = Functions.GetDataToTable(sql);
+
             if (cbxThang.Text != "")
             {
-                sql = sql + "AND MONTH(NgayThue) =" + cbxThang.Text;    
+                
+                tt = tt + "AND MONTH(NgayThue) =" + cbxThang.Text; 
+
             }
             if (cbxNam.Text != "")
-                sql = sql + "AND YEAR(NgayThue) =" + cbxNam.Text;
-             txtTongTien.Text=dataGridView2.CurrentRow.Cells[0].Value.ToString();
+                tt = tt + "AND YEAR(NgayThue) =" + cbxNam.Text;
+            if (radZoneA.Checked == true)
+            {
+                tt = tt + "AND id_phong='Zone A'";
+            }
+            if(radZoneB.Checked == true){
+                tt = tt + "And id_phong='Zone B'" ;
+            }
+            if (radZoneC.Checked == true)
+            {
+                tt = tt + "And id_phong='Zone C'";
+            }
+            
+            if (cboQuy.Text == "1")
+            {
+                tt = tt + "AND MONTH(NgayThue) BETWEEN '1' AND '3'";
+            }
+            if (cboQuy.Text == "2")
+            {
+                tt = tt + "AND MONTH(NgayThue) BETWEEN '4' AND '6'";
+            }
+            if (cboQuy.Text == "3")
+            {
+                tt = tt + "AND MONTH(NgayThue) BETWEEN '7' AND '9'";
+            }
+            if (cboQuy.Text == "4")
+            {
+                tt = tt + "AND MONTH(NgayThue) BETWEEN '10' AND '12'";
+            }
+
+
+            TT = Functions.GetDataToTable(tt);
+            dataGridView2.DataSource = TT;
+           
             Load_DataGridView();
+            label3.Text = "Tổng Doanh Thu: "+ Functions.GetFieldValues(tt);
         }
+
+        private void btnrefresh_Click(object sender, EventArgs e)
+        {
+            Reset_Values();
+        }
+       
+private void cbxThang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboQuy.Enabled = false;
+
+        }
+
+        private void cboQuy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbxThang.Enabled = false;
+        }
+
     }
+
 }
     
