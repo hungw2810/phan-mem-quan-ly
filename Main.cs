@@ -31,13 +31,6 @@ namespace Quanly
             f.Show();
         }
 
-        private void mnu_dm_ttPhong_Click(object sender, EventArgs e)
-        {
-            Danh_mục.Thông_tin.Phong f = new Danh_mục.Thông_tin.Phong();
-            f.StartPosition = FormStartPosition.CenterScreen;
-            f.Show();
-        }
-
         private void mnu_dm_Baotri_Click(object sender, EventArgs e)
         {
             Danh_mục.Baotri f = new Danh_mục.Baotri();

@@ -106,12 +106,6 @@
     <Compile Include="Danh mục\Thuemay.Designer.cs">
       <DependentUpon>Thuemay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Danh mục\Thông tin\Phong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Danh mục\Thông tin\Phong.Designer.cs">
-      <DependentUpon>Phong.cs</DependentUpon>
-    </Compile>
     <Compile Include="Dữ liệu\Bảo trì\Giaiphap.cs">
       <SubType>Form</SubType>
     </Compile>
