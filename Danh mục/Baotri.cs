@@ -40,6 +40,7 @@ namespace Quanly.Danh_mục
         {
             ResetValues();
             btnSave.Enabled = false;
+            btnAdd.Enabled = true;
             cboMay.Enabled = false;
             cboNBT.Enabled = false;
             cboNguyennhan.Enabled = false;
