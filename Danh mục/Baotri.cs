@@ -149,6 +149,7 @@ namespace Quanly.Danh_mục
             Functions.RunSql(sql);
             sql = "INSERT into ctbt (id_may,id_giaiphap,id_nn) values('"+cboMay.Text+"','"+magp+"','"+mann+"')";
             Functions.RunSql(sql);
+            Functions.RunSql("UPDATE MayTinh SET TinhTrang=N'Đang bảo trì' WHERE id_may='" + cboMay.Text + "'");
             Load_dtgv();
             ResetValues();
             btnAdd.Enabled = true;
