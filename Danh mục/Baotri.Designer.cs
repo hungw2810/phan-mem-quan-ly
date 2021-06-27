@@ -31,6 +31,7 @@ namespace Quanly.Danh_mục
         {
             this.dtgv = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnKetthuc = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtDay_start = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@ namespace Quanly.Danh_mục
             this.label3 = new System.Windows.Forms.Label();
             this.txtThoigian = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.btnKetthuc = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -58,7 +58,7 @@ namespace Quanly.Danh_mục
             this.dtgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv.Location = new System.Drawing.Point(21, 24);
             this.dtgv.Name = "dtgv";
-            this.dtgv.Size = new System.Drawing.Size(431, 303);
+            this.dtgv.Size = new System.Drawing.Size(431, 313);
             this.dtgv.TabIndex = 0;
             this.dtgv.Click += new System.EventHandler(this.dtgv_Click);
             // 
@@ -70,10 +70,22 @@ namespace Quanly.Danh_mục
             this.groupBox1.ForeColor = System.Drawing.Color.Crimson;
             this.groupBox1.Location = new System.Drawing.Point(22, 23);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(472, 366);
+            this.groupBox1.Size = new System.Drawing.Size(472, 381);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MÁY ĐANG BẢO TRÌ";
+            // 
+            // btnKetthuc
+            // 
+            this.btnKetthuc.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKetthuc.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnKetthuc.Location = new System.Drawing.Point(344, 343);
+            this.btnKetthuc.Name = "btnKetthuc";
+            this.btnKetthuc.Size = new System.Drawing.Size(108, 23);
+            this.btnKetthuc.TabIndex = 12;
+            this.btnKetthuc.Text = "Delete";
+            this.btnKetthuc.UseVisualStyleBackColor = true;
+            this.btnKetthuc.Click += new System.EventHandler(this.btnKetthuc_Click);
             // 
             // groupBox2
             // 
@@ -224,18 +236,6 @@ namespace Quanly.Danh_mục
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnKetthuc
-            // 
-            this.btnKetthuc.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKetthuc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnKetthuc.Location = new System.Drawing.Point(344, 333);
-            this.btnKetthuc.Name = "btnKetthuc";
-            this.btnKetthuc.Size = new System.Drawing.Size(108, 23);
-            this.btnKetthuc.TabIndex = 12;
-            this.btnKetthuc.Text = "Delete";
-            this.btnKetthuc.UseVisualStyleBackColor = true;
-            this.btnKetthuc.Click += new System.EventHandler(this.btnKetthuc_Click);
             // 
             // Baotri
             // 
