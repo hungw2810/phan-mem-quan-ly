@@ -42,6 +42,7 @@ namespace Quanly.Dữ_liệu
             Load_DataGridView();
             resetvalues();
         }
+
         private void Load_DataGridView()
         {
             string sql;
@@ -102,6 +103,7 @@ namespace Quanly.Dữ_liệu
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
         }
+
         private void resetvalues()
         {
             txtMamay.Text = "";
@@ -197,7 +199,6 @@ namespace Quanly.Dữ_liệu
                 return;
             }
             sql = "INSERT INTO MayTinh(id_may,id_phong,id_ocung,id_chip,id_ram,id_man,id_tainghe,id_chuot,id_banphim,TinhTrang,GhiChu) VALUES(N'" + txtMamay.Text.Trim() + "',N'" + cboMaphong.SelectedValue.ToString() + "',N'" + cboMaocung.SelectedValue.ToString() + "',N'" + cboMachip.SelectedValue.ToString() + "',N'" + cboMaram.SelectedValue.ToString() + "',N'" + cboMamanhinh.SelectedValue.ToString() + "',N'" + cboMatainghe.SelectedValue.ToString() + "',N'" + cboMachuot.SelectedValue.ToString() + "',N'" + cboMabanphim.SelectedValue.ToString() + "',N'" + txtTinhtrang.Text.Trim() + "',N'" + txtGhichu.Text.Trim() + "')";
-
             Functions.RunSql(sql);
             Load_DataGridView();
             soluong = Convert.ToDouble(Functions.GetFieldValues("SELECT SoMay FROM Phong WHERE id_phong=N'" + cboMaphong.SelectedValue + "'"));
@@ -212,7 +213,6 @@ namespace Quanly.Dữ_liệu
             btnThem.Enabled = true;
             txtMamay.Enabled = false;
         }
-
         private void btnXoa_Click(object sender, EventArgs e)
         {
             string sql;
@@ -231,11 +231,11 @@ namespace Quanly.Dữ_liệu
             {
                 sql = "DELETE MayTinh WHERE id_may=N'" + txtMamay.Text + "'";
                 Functions.RunSqlDel(sql);
-                soluong = Convert.ToDouble(Functions.GetFieldValues("SELECT SoMay FROM Phong WHERE id_phong=N'" + cboMaphong.SelectedValue + "'"));
+                soluong = Convert.ToDouble(Functions.GetFieldValues("SELECT SoMay FROM Phong WHERE id_phong='" + cboMaphong.SelectedValue + "'"));
                 slmoi = soluong - 1;
                 sql = "UPDATE Phong SET SoMay=" + slmoi + "WHERE id_phong =N'" + cboMaphong.SelectedValue + "'";
                 Functions.RunSql(sql);
-                Load_DataGridView();
+                Load_DataGridView();  
                 resetvalues();
                 return;
             }
@@ -243,8 +243,8 @@ namespace Quanly.Dữ_liệu
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string sql;
-            // double soluong, slmoi;
+            string sql, sql1, sql2;
+            int a,slmoi,soluong;
             if (txtMamay.Text == "")
             {
                 MessageBox.Show("Bạn phải nhập mã máy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -269,7 +269,6 @@ namespace Quanly.Dữ_liệu
                 cboMachip.Focus();
                 return;
             }
-
             if (cboMaram.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập mã ram", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -300,8 +299,73 @@ namespace Quanly.Dữ_liệu
                 cboMatainghe.Focus();
                 return;
             }
-            sql = "UPDATE MayTinh SET id_phong=N'" + cboMaphong.SelectedValue.ToString() + "',id_ocung = N'" + cboMaocung.SelectedValue.ToString() + "',id_chip = N'" + cboMachip.SelectedValue.ToString() + "',id_ram = N'" + cboMaram.SelectedValue.ToString() + "',id_man = N'" + cboMamanhinh.SelectedValue.ToString() + "',id_tainghe = N'" + cboMatainghe.SelectedValue.ToString() + "',id_chuot = N'" + cboMachuot.SelectedValue.ToString() + "',id_banphim = N'" + cboMabanphim.SelectedValue.ToString() + "',TinhTrang=N'" + txtTinhtrang.Text.Trim() + "',GhiChu=N'" + txtGhichu.Text.Trim() + "'WHERE id_may=N'" + txtMamay.Text + "'";
-            Functions.RunSql(sql);
+            if (cboMaphong.SelectedIndex != -1)
+            {
+                //Trừ đi số lượng phòng cũ
+                a = Convert.ToInt32(Functions.GetFieldValues("SELECT a.SoMay FROM Phong a JOIN MayTinh b ON a.id_phong=b.id_phong WHERE id_may=N'" + txtMamay.Text.Trim() + "'"));
+                a = a - 1;
+                string phongcu = Functions.GetFieldValues("SELECT id_phong FROM MayTinh WHERE id_may='" + txtMamay.Text.Trim() + "'");
+                sql1 = "UPDATE Phong SET SoMay=" + a + "WHERE id_phong='" + phongcu + "'";
+                Functions.RunSql(sql1);
+                //Cộng thêm số lượng phòng mới
+                soluong = Convert.ToInt32(Functions.GetFieldValues("SELECT SoMay FROM Phong WHERE id_phong=N'" + cboMaphong.SelectedValue + "'"));
+                slmoi = soluong + 1;
+                sql2 = "UPDATE Phong SET SoMay=" + slmoi + "WHERE id_phong =N'" + cboMaphong.SelectedValue + "'";
+                Functions.RunSql(sql2);
+                //UPDATE Mã phòng
+                sql = "UPDATE MayTinh SET id_phong=N'" + cboMaphong.Text + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }
+            if (cboMaocung.SelectedIndex!=-1)
+            {
+                sql= "UPDATE MayTinh SET id_ocung=N'" + cboMaocung.SelectedValue.ToString() + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }
+            if (cboMaocung.SelectedIndex != -1)
+            {
+                sql = "UPDATE MayTinh SET id_ocung=N'" + cboMaocung.SelectedValue.ToString() + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }
+            if (cboMachip.SelectedIndex != -1)
+            {
+                sql = "UPDATE MayTinh SET id_chip=N'" + cboMachip.SelectedValue.ToString() + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }
+            if (cboMaram.SelectedIndex != -1)
+            {
+                sql = "UPDATE MayTinh SET id_ram=N'" + cboMaram.SelectedValue.ToString() + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }
+            if (cboMamanhinh.SelectedIndex != -1)
+            {
+                sql = "UPDATE MayTinh SET id_man=N'" + cboMamanhinh.SelectedValue.ToString() + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }
+            if (cboMatainghe.SelectedIndex != -1)
+            {
+                sql = "UPDATE MayTinh SET id_tainghe=N'" + cboMatainghe.SelectedValue.ToString() + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }
+            if (cboMachuot.SelectedIndex != -1)
+            {
+                sql = "UPDATE MayTinh SET id_chuot=N'" + cboMachuot.SelectedValue.ToString() + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }
+            if (cboMabanphim.SelectedIndex != -1)
+            {
+                sql = "UPDATE MayTinh SET id_banphim=N'" + cboMabanphim.SelectedValue.ToString() + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }
+            if (txtTinhtrang.Text.Trim() != "")
+            {
+                sql = "UPDATE MayTinh SET TinhTrang=N'" + txtTinhtrang.Text.Trim() + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }
+            if (txtGhichu.Text.Trim() != "")
+            {
+                sql = "UPDATE MayTinh SET GhiChu=N'" + txtGhichu.Text.Trim() + "'WHERE id_may=N'" + txtMamay.Text + "'";
+                Functions.RunSql(sql);
+            }           
             Load_DataGridView();
             resetvalues();
             btnBoqua.Enabled = false;
