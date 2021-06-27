@@ -169,6 +169,7 @@ namespace Quanly.Danh_mục
             string sql = "UPDATE MayTinh set TinhTrang ='' WHERE id_may = '" + cboMay.Text + "'";
             Functions.RunSql(sql);
             Load_dtgv();
+            btnKetthuc.Enabled = false;
         }
 
         private void dtgv_Click(object sender, EventArgs e)
