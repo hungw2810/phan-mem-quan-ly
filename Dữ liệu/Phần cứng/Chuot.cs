@@ -33,8 +33,6 @@ namespace Quanly.Dữ_liệu.Phần_cứng
             DataGridView.DataSource = CT;
             DataGridView.Columns[0].HeaderText = "Mã chuột";
             DataGridView.Columns[1].HeaderText = "Tên chuột";
-            DataGridView.Columns[0].Width = 200;
-            DataGridView.Columns[1].Width = 300;
             // Không cho phép thêm mới dữ liệu trực tiếp trên lưới
             DataGridView.AllowUserToAddRows = false;
             // Không cho phép sửa dữ liệu trực tiếp trên lưới
