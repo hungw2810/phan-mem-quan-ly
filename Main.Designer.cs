@@ -34,8 +34,6 @@ namespace Quanly
             this.mnu_dm_thuemay = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuTinhtien = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_dm_Baotri = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_dm_ttPhong = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_tk_May = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_tk_Nhanvien = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,8 +78,7 @@ namespace Quanly
             this.danhSáchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnu_dm_thuemay,
             this.mnuTinhtien,
-            this.mnu_dm_Baotri,
-            this.thôngTinToolStripMenuItem});
+            this.mnu_dm_Baotri});
             this.danhSáchToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.danhSáchToolStripMenuItem.Name = "danhSáchToolStripMenuItem";
             this.danhSáchToolStripMenuItem.Size = new System.Drawing.Size(82, 23);
@@ -108,23 +105,6 @@ namespace Quanly
             this.mnu_dm_Baotri.Size = new System.Drawing.Size(180, 24);
             this.mnu_dm_Baotri.Text = "Bảo trì";
             this.mnu_dm_Baotri.Click += new System.EventHandler(this.mnu_dm_Baotri_Click);
-            // 
-            // thôngTinToolStripMenuItem
-            // 
-            this.thôngTinToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnu_dm_ttPhong});
-            this.thôngTinToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thôngTinToolStripMenuItem.Name = "thôngTinToolStripMenuItem";
-            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.thôngTinToolStripMenuItem.Text = "Thông tin";
-            // 
-            // mnu_dm_ttPhong
-            // 
-            this.mnu_dm_ttPhong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnu_dm_ttPhong.Name = "mnu_dm_ttPhong";
-            this.mnu_dm_ttPhong.Size = new System.Drawing.Size(116, 24);
-            this.mnu_dm_ttPhong.Text = "Phòng";
-            this.mnu_dm_ttPhong.Click += new System.EventHandler(this.mnu_dm_ttPhong_Click);
             // 
             // tìmKiếmToolStripMenuItem
             // 
@@ -343,8 +323,6 @@ namespace Quanly
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem danhSáchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnu_dm_thuemay;
-        private System.Windows.Forms.ToolStripMenuItem thôngTinToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnu_dm_ttPhong;
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnu_tk_May;
         private System.Windows.Forms.ToolStripMenuItem mnu_tk_Nhanvien;
