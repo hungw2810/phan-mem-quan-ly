@@ -52,7 +52,7 @@ namespace Quanly.Danh_mục
         private void Load_dtgv()
         {
             string timeht = DateTime.Today.ToString("yyyy/MM/dd");
-            string sql = "select b.id_may,a.day_start,a.day_end from baotri a inner join ctbt b on a.id_baotri=b.id_baotri where convert(varchar(20),a.day_end,111) >= convert(varchar(20),getdate(),111)";
+            string sql = "select b.id_may,a.day_start,a.day_end from baotri a inner join ctbt b on a.id_baotri=b.id_baotri inner join maytinh c on b.id_may=c.id_may where convert(varchar(20),a.day_end,111) >= convert(varchar(20),getdate(),111) and c.tinhtrang=N'Đang bảo trì'";
             tbla=Functions.GetDataToTable(sql);
             dtgv.DataSource = tbla;
             dtgv.Columns[0].HeaderText = "Mã máy";
@@ -69,6 +69,7 @@ namespace Quanly.Danh_mục
         private void Baotri_Load(object sender, EventArgs e)
         {       
             btnSave.Enabled = false;
+            btnKetthuc.Enabled = false;
             cboMay.Enabled = false;
             cboNBT.Enabled = false;
             cboNguyennhan.Enabled = false;
@@ -159,6 +160,19 @@ namespace Quanly.Danh_mục
             cboGiaiphap.Enabled = false;
             cboNguyennhan.Enabled = false;
             txtDay_start.Enabled = false;
+        }
+
+        private void btnKetthuc_Click(object sender, EventArgs e)
+        {
+            string sql = "UPDATE MayTinh set TinhTrang ='' WHERE id_may = '" + cboMay.Text + "'";
+            Functions.RunSql(sql);
+            Load_dtgv();
+        }
+
+        private void dtgv_Click(object sender, EventArgs e)
+        {
+            cboMay.Text = dtgv.CurrentRow.Cells["id_may"].Value.ToString();
+            btnKetthuc.Enabled = true;
         }
     }
 }
