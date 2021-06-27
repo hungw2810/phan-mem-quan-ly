@@ -35,10 +35,10 @@ namespace Quanly.Dữ_liệu.Bảo_trì
             DataGridView.Columns[1].HeaderText = "Tên Giải Pháp";
             DataGridView.Columns[2].HeaderText = "Chi Phí";
             DataGridView.Columns[3].HeaderText = "Thời Gian";
-            DataGridView.Columns[0].Width = 100;
-            DataGridView.Columns[1].Width = 150;
-            DataGridView.Columns[2].Width = 150;
-            DataGridView.Columns[3].Width = 150;
+            DataGridView.Columns[0].Width = 125;
+            DataGridView.Columns[1].Width = 125;
+            DataGridView.Columns[2].Width = 125;
+            DataGridView.Columns[3].Width = 125;
             DataGridView.AllowUserToAddRows = false;
             DataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
