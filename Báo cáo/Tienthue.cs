@@ -14,7 +14,6 @@ namespace Quanly.Báo_cáo
 {
     public partial class Tienthue : Form
     {
-        DataTable TT;
         public Tienthue()
         {
             InitializeComponent();

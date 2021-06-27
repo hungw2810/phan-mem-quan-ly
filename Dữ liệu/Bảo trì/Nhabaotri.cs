@@ -32,6 +32,14 @@ namespace Quanly.Dữ_liệu.Bảo_trì
             sql = "SELECT id_nbt, TenNBT, DiaChi, SDT FROM NhaBaoTri";
             NBT = Functions.GetDataToTable(sql);
             DataGridView.DataSource = NBT;
+            DataGridView.Columns[0].HeaderText = "Mã nhà bảo trì";
+            DataGridView.Columns[1].HeaderText = "Tên nhà bảo trì";
+            DataGridView.Columns[2].HeaderText = "Địa chỉ";
+            DataGridView.Columns[3].HeaderText = "Điện thoại";
+            DataGridView.Columns[0].Width = 115;
+            DataGridView.Columns[1].Width = 115;
+            DataGridView.Columns[2].Width = 115;
+            DataGridView.Columns[3].Width = 115;
             DataGridView.AllowUserToAddRows = false;
             DataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
