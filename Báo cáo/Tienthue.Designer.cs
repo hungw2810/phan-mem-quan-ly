@@ -33,8 +33,8 @@ namespace Quanly.Báo_cáo
             this.btnTim = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbxThang = new System.Windows.Forms.ComboBox();
-            this.cbxNam = new System.Windows.Forms.ComboBox();
+            this.cboThang = new System.Windows.Forms.ComboBox();
+            this.cboNam = new System.Windows.Forms.ComboBox();
             this.radZoneA = new System.Windows.Forms.RadioButton();
             this.radZoneB = new System.Windows.Forms.RadioButton();
             this.radZoneC = new System.Windows.Forms.RadioButton();
@@ -53,10 +53,10 @@ namespace Quanly.Báo_cáo
             // btnTim
             // 
             this.btnTim.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(17, 288);
+            this.btnTim.Location = new System.Drawing.Point(29, 261);
             this.btnTim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(99, 31);
+            this.btnTim.Size = new System.Drawing.Size(91, 37);
             this.btnTim.TabIndex = 4;
             this.btnTim.Text = "Find";
             this.btnTim.UseVisualStyleBackColor = true;
@@ -84,11 +84,11 @@ namespace Quanly.Báo_cáo
             this.label2.TabIndex = 5;
             this.label2.Text = "Năm";
             // 
-            // cbxThang
+            // cboThang
             // 
-            this.cbxThang.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxThang.FormattingEnabled = true;
-            this.cbxThang.Items.AddRange(new object[] {
+            this.cboThang.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboThang.FormattingEnabled = true;
+            this.cboThang.Items.AddRange(new object[] {
             "01",
             "02",
             "03",
@@ -101,26 +101,26 @@ namespace Quanly.Báo_cáo
             "10",
             "11",
             "12"});
-            this.cbxThang.Location = new System.Drawing.Point(101, 28);
-            this.cbxThang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxThang.Name = "cbxThang";
-            this.cbxThang.Size = new System.Drawing.Size(125, 27);
-            this.cbxThang.TabIndex = 9;
-            this.cbxThang.SelectedIndexChanged += new System.EventHandler(this.cbxThang_SelectedIndexChanged);
+            this.cboThang.Location = new System.Drawing.Point(101, 28);
+            this.cboThang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboThang.Name = "cboThang";
+            this.cboThang.Size = new System.Drawing.Size(125, 27);
+            this.cboThang.TabIndex = 9;
+            this.cboThang.SelectedIndexChanged += new System.EventHandler(this.cbxThang_SelectedIndexChanged);
             // 
-            // cbxNam
+            // cboNam
             // 
-            this.cbxNam.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxNam.FormattingEnabled = true;
-            this.cbxNam.Items.AddRange(new object[] {
+            this.cboNam.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboNam.FormattingEnabled = true;
+            this.cboNam.Items.AddRange(new object[] {
             "2020",
             "2021",
             "2022"});
-            this.cbxNam.Location = new System.Drawing.Point(101, 127);
-            this.cbxNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbxNam.Name = "cbxNam";
-            this.cbxNam.Size = new System.Drawing.Size(125, 27);
-            this.cbxNam.TabIndex = 9;
+            this.cboNam.Location = new System.Drawing.Point(101, 127);
+            this.cboNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboNam.Name = "cboNam";
+            this.cboNam.Size = new System.Drawing.Size(125, 27);
+            this.cboNam.TabIndex = 9;
             // 
             // radZoneA
             // 
@@ -194,10 +194,10 @@ namespace Quanly.Báo_cáo
             // btnrefresh
             // 
             this.btnrefresh.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnrefresh.Location = new System.Drawing.Point(122, 288);
+            this.btnrefresh.Location = new System.Drawing.Point(126, 261);
             this.btnrefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnrefresh.Name = "btnrefresh";
-            this.btnrefresh.Size = new System.Drawing.Size(99, 31);
+            this.btnrefresh.Size = new System.Drawing.Size(99, 37);
             this.btnrefresh.TabIndex = 13;
             this.btnrefresh.Text = "Refresh";
             this.btnrefresh.UseVisualStyleBackColor = true;
@@ -208,7 +208,7 @@ namespace Quanly.Báo_cáo
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(76, 251);
+            this.label3.Location = new System.Drawing.Point(64, 222);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 21);
             this.label3.TabIndex = 14;
@@ -217,10 +217,10 @@ namespace Quanly.Báo_cáo
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(228, 288);
+            this.btnCancel.Location = new System.Drawing.Point(232, 261);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 31);
+            this.btnCancel.Size = new System.Drawing.Size(100, 37);
             this.btnCancel.TabIndex = 15;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -228,18 +228,18 @@ namespace Quanly.Báo_cáo
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cbxThang);
+            this.groupBox1.Controls.Add(this.cboThang);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.cbxNam);
+            this.groupBox1.Controls.Add(this.cboNam);
             this.groupBox1.Controls.Add(this.cboQuy);
             this.groupBox1.Controls.Add(this.radZoneA);
             this.groupBox1.Controls.Add(this.radZoneC);
             this.groupBox1.Controls.Add(this.radZoneB);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox1.Location = new System.Drawing.Point(17, 52);
+            this.groupBox1.Location = new System.Drawing.Point(29, 33);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -263,10 +263,10 @@ namespace Quanly.Báo_cáo
             // btnRP
             // 
             this.btnRP.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRP.Location = new System.Drawing.Point(336, 288);
+            this.btnRP.Location = new System.Drawing.Point(340, 261);
             this.btnRP.Margin = new System.Windows.Forms.Padding(4);
             this.btnRP.Name = "btnRP";
-            this.btnRP.Size = new System.Drawing.Size(100, 31);
+            this.btnRP.Size = new System.Drawing.Size(100, 37);
             this.btnRP.TabIndex = 15;
             this.btnRP.Text = "Export";
             this.btnRP.UseVisualStyleBackColor = true;
@@ -276,7 +276,7 @@ namespace Quanly.Báo_cáo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 338);
+            this.ClientSize = new System.Drawing.Size(473, 314);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnRP);
             this.Controls.Add(this.btnCancel);
@@ -299,8 +299,8 @@ namespace Quanly.Báo_cáo
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbxThang;
-        private System.Windows.Forms.ComboBox cbxNam;
+        private System.Windows.Forms.ComboBox cboThang;
+        private System.Windows.Forms.ComboBox cboNam;
         private System.Windows.Forms.RadioButton radZoneA;
         private System.Windows.Forms.RadioButton radZoneB;
         private System.Windows.Forms.RadioButton radZoneC;
