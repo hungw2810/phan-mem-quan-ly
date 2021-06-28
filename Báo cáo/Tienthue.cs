@@ -84,7 +84,16 @@ namespace Quanly.Báo_cáo
             {
                 tt = tt + "AND MONTH(NgayThue) BETWEEN '10' AND '12'";
             }
-            label3.Text = label3.Text+ Functions.GetFieldValues(tt);
+            if (label3.Text==label3.Text)
+            {
+                label3.Text = "Tổng Tiền : 0";
+            }
+            else
+            {
+
+                label3.Text = label3.Text + Functions.GetFieldValues(tt);
+            }
+            
             btnTim.Enabled = false;
         }
         private void btnrefresh_Click(object sender, EventArgs e)
@@ -124,7 +133,7 @@ namespace Quanly.Báo_cáo
             COMExcel.Range exRange;
             string tt;
             int hang = 0, cot = 0;
-            DataTable ThongtinNBT, ThongtinBaotri;
+            DataTable ThongtinNBT, ThongtinBaotri,MaPhong;
             exBook = exApp.Workbooks.Add(COMExcel.XlWBATemplate.xlWBATWorksheet);
             exSheet = exBook.Worksheets[1];
             // Định dạng chung
@@ -163,7 +172,7 @@ namespace Quanly.Báo_cáo
             exRange.Range["B6:C9"].Font.Name = "Times new roman";
             exRange.Range["B6:B6"].Value = "Mã Phòng:";
             
-            exRange.Range["C6:C6"].Value = ThongtinNBT.Rows[0][0].ToString();
+            
             
           
             //Lấy thông tin bảo trì
@@ -218,19 +227,83 @@ namespace Quanly.Báo_cáo
             
             btnTim.Enabled = false;
             ThongtinBaotri = Functions.GetDataToTable(tt);
+                       
             //Tạo dòng tiêu đề bảng
             exRange.Range["B7:B7"].Font.Bold = true;
             exRange.Range["B7:B7"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
             exRange.Range["B7:B7"].ColumnWidth = 15;
             exRange.Range["B7:B7"].Value = "Tổng tiền";
-            
+            if (radZoneA.Checked == true&&cboQuy.Enabled==false)
+            {
+                
+                exRange.Range["B4:B4"].Value = "Năm:";
+                exRange.Range["C4:C4"].Value = cboNam.Text;
+                exRange.Range["B5:B5"].Value = "Tháng:";
+                exRange.Range["C5:C5"].Value = cboThang.Text;
+                exRange.Range["C6:C6"].Value = "Zone A";
+            }
+            if (radZoneB.Checked == true && cboQuy.Enabled == false)
+            {
+                exRange.Range["B4:B4"].Value = "Năm:";
+                exRange.Range["C4:C4"].Value = cboNam.Text;
+                exRange.Range["B5:B5"].Value = "Tháng:";
+                exRange.Range["C5:C5"].Value = cboThang.Text;
+                exRange.Range["C6:C6"].Value = "Zone B";
+            }
+            if (radZoneC.Checked == true && cboQuy.Enabled == false)
+            {
+                exRange.Range["B4:B4"].Value = "Năm:";
+                exRange.Range["C4:C4"].Value = cboNam.Text;
+                exRange.Range["B5:B5"].Value = "Tháng:";
+                exRange.Range["C5:C5"].Value = cboThang.Text;
+                exRange.Range["C6:C6"].Value = "Zone C";
+            }
+            if (radZoneA.Checked == false && radZoneB.Checked == false && radZoneC.Checked == false && cboQuy.Enabled == false)
+            {
+                exRange.Range["B5:B5"].Value = "Tháng:";
+                exRange.Range["C5:C5"].Value = cboThang.Text;
+                exRange.Range["B6:B6"].Value = "Năm:";
+                exRange.Range["C6:C6"].Value = cboNam.Text;
+
+            }
+            if (radZoneA.Checked == true && cboThang.Enabled == false)
+            {
+                exRange.Range["B4:B4"].Value = "Năm:";
+                exRange.Range["C4:C4"].Value = cboNam.Text;
+                exRange.Range["B5:B5"].Value = "Quý:";
+                exRange.Range["C5:C5"].Value = cboQuy.Text;
+                exRange.Range["C6:C6"].Value = "Zone A";
+            }
+            if (radZoneB.Checked == true && cboThang.Enabled == false)
+            {
+                exRange.Range["B4:B4"].Value = "Năm:";
+                exRange.Range["C4:C4"].Value = cboNam.Text;
+                exRange.Range["B5:B5"].Value = "Quý:";
+                exRange.Range["C5:C5"].Value = cboQuy.Text;
+                exRange.Range["C6:C6"].Value = "Zone B";
+            }
+            if (radZoneC.Checked == true && cboThang.Enabled == false)
+            {
+                exRange.Range["B4:B4"].Value = "Năm:";
+                exRange.Range["C4:C4"].Value = cboNam.Text;
+                exRange.Range["B5:B5"].Value = "Quý:";
+                exRange.Range["C5:C5"].Value = cboQuy.Text;
+                exRange.Range["C6:C6"].Value = "Zone C";
+            }
+            if (radZoneA.Checked == false && radZoneB.Checked == false && radZoneC.Checked == false && cboThang.Enabled == false)
+            {
+                exRange.Range["B5:B5"].Value = "Quý";
+                exRange.Range["C5:C5"].Value = cboQuy.Text;
+                exRange.Range["B6:B6"].Value = "Năm:";
+                exRange.Range["C6:C6"].Value = cboNam.Text;
+
+            }
             for (hang = 0; hang <= ThongtinBaotri.Rows.Count - 1; hang++) 
             {
                 for (cot = 0; cot <= ThongtinBaotri.Columns.Count - 1; cot++)
                     //Điền thông tin hàng từ cột thứ 1, dòng 12
-                    exSheet.Cells[cot + 3][hang + 7] = ThongtinBaotri.Rows[hang][cot].ToString();
+                    exSheet.Cells[cot + 3][hang + 7] = ThongtinBaotri.Rows[hang][cot].ToString();               
             }
-
             exSheet.Name = "Báo Cáo Tiền Thuê";
             exApp.Visible = true;
 
