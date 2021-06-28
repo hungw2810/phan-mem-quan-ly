@@ -29,7 +29,6 @@ namespace Quanly.Báo_cáo
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.btnBaocao = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnInbaocao = new System.Windows.Forms.Button();
@@ -44,22 +43,10 @@ namespace Quanly.Báo_cáo
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(113, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 44);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "CHI PHÍ BẢO TRÌ";
-            // 
             // btnBaocao
             // 
             this.btnBaocao.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaocao.Location = new System.Drawing.Point(98, 216);
+            this.btnBaocao.Location = new System.Drawing.Point(99, 196);
             this.btnBaocao.Margin = new System.Windows.Forms.Padding(2);
             this.btnBaocao.Name = "btnBaocao";
             this.btnBaocao.Size = new System.Drawing.Size(86, 26);
@@ -71,7 +58,7 @@ namespace Quanly.Báo_cáo
             // btnRefresh
             // 
             this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.Location = new System.Drawing.Point(213, 216);
+            this.btnRefresh.Location = new System.Drawing.Point(214, 196);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(86, 26);
@@ -83,7 +70,7 @@ namespace Quanly.Báo_cáo
             // btnInbaocao
             // 
             this.btnInbaocao.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInbaocao.Location = new System.Drawing.Point(332, 216);
+            this.btnInbaocao.Location = new System.Drawing.Point(333, 196);
             this.btnInbaocao.Margin = new System.Windows.Forms.Padding(2);
             this.btnInbaocao.Name = "btnInbaocao";
             this.btnInbaocao.Size = new System.Drawing.Size(86, 26);
@@ -95,7 +82,7 @@ namespace Quanly.Báo_cáo
             // btnDong
             // 
             this.btnDong.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDong.Location = new System.Drawing.Point(445, 216);
+            this.btnDong.Location = new System.Drawing.Point(446, 196);
             this.btnDong.Margin = new System.Windows.Forms.Padding(2);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(86, 26);
@@ -108,10 +95,10 @@ namespace Quanly.Báo_cáo
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(41, 70);
+            this.label2.Location = new System.Drawing.Point(42, 50);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 21);
+            this.label2.Size = new System.Drawing.Size(45, 17);
             this.label2.TabIndex = 7;
             this.label2.Text = "Tháng";
             // 
@@ -119,10 +106,10 @@ namespace Quanly.Báo_cáo
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(53, 112);
+            this.label3.Location = new System.Drawing.Point(54, 92);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 21);
+            this.label3.Size = new System.Drawing.Size(33, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Quý";
             // 
@@ -130,10 +117,10 @@ namespace Quanly.Báo_cáo
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(49, 159);
+            this.label4.Location = new System.Drawing.Point(50, 139);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 21);
+            this.label4.Size = new System.Drawing.Size(37, 17);
             this.label4.TabIndex = 9;
             this.label4.Text = "Năm";
             // 
@@ -141,7 +128,7 @@ namespace Quanly.Báo_cáo
             // 
             this.DataGridView.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(251, 68);
+            this.DataGridView.Location = new System.Drawing.Point(252, 48);
             this.DataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersWidth = 51;
@@ -152,10 +139,10 @@ namespace Quanly.Báo_cáo
             // txtNam
             // 
             this.txtNam.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNam.Location = new System.Drawing.Point(96, 157);
+            this.txtNam.Location = new System.Drawing.Point(97, 137);
             this.txtNam.Margin = new System.Windows.Forms.Padding(2);
             this.txtNam.Name = "txtNam";
-            this.txtNam.Size = new System.Drawing.Size(121, 28);
+            this.txtNam.Size = new System.Drawing.Size(121, 24);
             this.txtNam.TabIndex = 21;
             // 
             // cboThang
@@ -175,9 +162,9 @@ namespace Quanly.Báo_cáo
             "10",
             "11",
             "12"});
-            this.cboThang.Location = new System.Drawing.Point(96, 68);
+            this.cboThang.Location = new System.Drawing.Point(97, 48);
             this.cboThang.Name = "cboThang";
-            this.cboThang.Size = new System.Drawing.Size(121, 28);
+            this.cboThang.Size = new System.Drawing.Size(121, 24);
             this.cboThang.TabIndex = 22;
             this.cboThang.SelectedIndexChanged += new System.EventHandler(this.cboThang_SelectedIndexChanged);
             // 
@@ -190,17 +177,17 @@ namespace Quanly.Báo_cáo
             "2",
             "3",
             "4"});
-            this.cboQuy.Location = new System.Drawing.Point(96, 110);
+            this.cboQuy.Location = new System.Drawing.Point(97, 90);
             this.cboQuy.Name = "cboQuy";
-            this.cboQuy.Size = new System.Drawing.Size(121, 28);
+            this.cboQuy.Size = new System.Drawing.Size(121, 24);
             this.cboQuy.TabIndex = 23;
             this.cboQuy.SelectedIndexChanged += new System.EventHandler(this.cboQuy_SelectedIndexChanged);
             // 
             // Baotri
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 270);
+            this.ClientSize = new System.Drawing.Size(590, 257);
             this.Controls.Add(this.cboQuy);
             this.Controls.Add(this.cboThang);
             this.Controls.Add(this.txtNam);
@@ -212,11 +199,10 @@ namespace Quanly.Báo_cáo
             this.Controls.Add(this.btnInbaocao);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnBaocao);
-            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Baotri";
-            this.Text = "Báo cáo bảo trì";
+            this.Text = "Báo cáo chi phí bảo trì";
             this.Load += new System.EventHandler(this.Baotri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -225,7 +211,6 @@ namespace Quanly.Báo_cáo
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnInbaocao;
         private System.Windows.Forms.Button btnDong;

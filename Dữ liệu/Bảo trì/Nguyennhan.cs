@@ -36,11 +36,7 @@ namespace Quanly.Dữ_liệu.Bảo_trì
             DataGridView.DataSource = NN;
             DataGridView.Columns[0].HeaderText = "Mã nguyên nhân";
             DataGridView.Columns[1].HeaderText = "Tên nguyên nhân";
-            DataGridView.Columns[0].Width = 250;
-            DataGridView.Columns[1].Width = 250;
-            // Không cho phép thêm mới dữ liệu trực tiếp trên lưới
             DataGridView.AllowUserToAddRows = false;
-            // Không cho phép sửa dữ liệu trực tiếp trên lưới
             DataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
 
