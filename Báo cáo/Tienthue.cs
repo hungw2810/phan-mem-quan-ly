@@ -84,17 +84,13 @@ namespace Quanly.Báo_cáo
             {
                 tt = tt + "AND MONTH(NgayThue) BETWEEN '10' AND '12'";
             }
-            if (label3.Text==label3.Text)
-            {
-                label3.Text = "Tổng Tiền : 0";
-            }
-            else
-            {
-
-                label3.Text = label3.Text + Functions.GetFieldValues(tt);
-            }
-            
+            label3.Text = label3.Text + Functions.GetFieldValues(tt);       
             btnTim.Enabled = false;
+            cboQuy.Enabled = false;
+            
+            radZoneA.Enabled = false;
+            radZoneB.Enabled = false;
+            radZoneC.Enabled = false;
         }
         private void btnrefresh_Click(object sender, EventArgs e)
         {
@@ -133,7 +129,7 @@ namespace Quanly.Báo_cáo
             COMExcel.Range exRange;
             string tt;
             int hang = 0, cot = 0;
-            DataTable ThongtinNBT, ThongtinBaotri,MaPhong;
+            DataTable ThongtinNBT, ThongtinBaotri;
             exBook = exApp.Workbooks.Add(COMExcel.XlWBATemplate.xlWBATWorksheet);
             exSheet = exBook.Worksheets[1];
             // Định dạng chung
@@ -157,13 +153,13 @@ namespace Quanly.Báo_cáo
             exRange.Range["A3:B3"].Value = "Điện thoại: (04)88889999";
 
 
-            exRange.Range["C2:E2"].Font.Size = 16;
+            exRange.Range["C2:E2"].Font.Size = 14;
             exRange.Range["C2:E2"].Font.Name = "Times new roman";
-            exRange.Range["C2:E2"].Font.Bold = true;
-            exRange.Range["C2:E2"].Font.ColorIndex = 3; //Màu đỏ
-            exRange.Range["C2:E2"].MergeCells = true;
-            exRange.Range["C2:E2"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-            exRange.Range["C2:E2"].Value = "BÁO CÁO TỔNG TIỀN";
+            exRange.Range["C2:F2"].Font.Bold = true;
+            exRange.Range["C2:F2"].Font.ColorIndex = 3; //Màu đỏ
+            exRange.Range["C2:F2"].MergeCells = true;
+            exRange.Range["C2:F2"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+            exRange.Range["C2:F2"].Value = "BÁO CÁO TỔNG TIỀN";
             // Biểu diễn thông tin chung của Báo cáo chi phí
             tt = "SELECT id_phong FROM ThueMay";
             ThongtinNBT = Functions.GetDataToTable(tt);
