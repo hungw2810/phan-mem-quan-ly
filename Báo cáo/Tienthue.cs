@@ -96,6 +96,10 @@ namespace Quanly.Báo_cáo
         {
             Reset_Values();
             btnTim.Enabled = true;
+            radZoneA.Enabled = true;
+            radZoneB.Enabled = true;
+            radZoneC.Enabled = true;
+
         }      
         private void cbxThang_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -105,19 +109,10 @@ namespace Quanly.Báo_cáo
         {
             cboThang.Enabled = false;
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-     
-
-        private void timer1_Tick_1(object sender, EventArgs e)
-        {
-            DateTime time = DateTime.Now;
-            label5.Text = time.ToString("HH:mm:ss");
-        }
-
         private void btn_RP_Click(object sender, EventArgs e)
         {
             // Khởi động chương trình Excel
